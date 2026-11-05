@@ -1,0 +1,339 @@
+{
+  "bono-alquiler-joven-2026-2027": {
+    "nombre": "Youth Rent Bonus 2026-2027 (Bono Alquiler Joven)",
+    "organismo": "Balearic Government · Department of Housing, Territory and Mobility",
+    "interesaA": ["Young people aged 35 or under", "People renting a home or a room"],
+    "resumen": "Monthly aid for people aged 35 or under who rent a home or a room in the Balearic Islands. It covers part of the rent for 2026 and 2027, up to 24 months.",
+    "requisitos": [
+      "Be 35 or under when you apply.",
+      "Spanish, EU, EEA or Swiss nationality; otherwise, legal stay or residence in Spain.",
+      "Hold a rental or assignment-of-use contract. Subletting is not accepted.",
+      "Maximum rent: €900 a month for a home or €450 a month for a room.",
+      "Income no higher than 3 times the IPREM (the e-office states €25,200). For a home, everyone living there counts.",
+      "A regular source of income: at least 3 months in the 6 months before applying, or expected to last 6 months.",
+      "Be up to date with your rent payments.",
+      "It must be your usual residence, shown by a certificate of registration (empadronamiento).",
+      "No close family link (first or second degree) with the landlord, and not a partner of the landlord."
+    ],
+    "importe": "Up to €250 a month per person, for a maximum of 24 months.",
+    "notas": "If you already applied, rent receipts must be submitted in three windows: 4 Jan–1 Feb 2027, 15 Jun–15 Jul 2027 and 3 Jan–3 Feb 2028.",
+    "pendientes": ["The €250 a month figure comes from the Bono's information website; the e-office page does not repeat it."],
+    "extras": ["Youth Rent Bonus website"]
+  },
+  "ayudas-alquiler-govern": {
+    "nombre": "Rent aid (general call)",
+    "organismo": "Balearic Government · Department of Housing, Territory and Mobility",
+    "interesaA": ["Tenants with limited income"],
+    "resumen": "Aid to pay part of the rent on your main home, for households with limited income. It is called once a year. The latest published call is the 2025 aid, which no longer accepts applications.",
+    "notas": "Requirements and amounts change with each call. The new one will be published in the BOIB (official gazette).",
+    "pendientes": [
+      "We could not find the 2026 call in official sources. Press reports (2 Nov 2026) say it would open in the first quarter of 2027, without official confirmation.",
+      "Requirements and amount: check the official call when it is published."
+    ],
+    "enlaceTexto": "BOIB resolution on the 2025 rent aid",
+    "extras": ["Balearic Official Gazette (BOIB)"]
+  },
+  "ayuda-compra-vivienda-10000": {
+    "nombre": "€10,000 grant to buy a home (aged 40 or under)",
+    "organismo": "Balearic Government · Directorate-General for Housing and Architecture",
+    "interesaA": ["People aged 40 or under buying their main home"],
+    "resumen": "A direct grant of €10,000 per home for people aged 40 or under who buy their main home in the Balearic Islands, already built or under construction, from 1 January 2026.",
+    "requisitos": [
+      "Be 40 or under when you apply.",
+      "Have lived in the Balearic Islands for at least 5 consecutive years before signing the purchase.",
+      "Live in the home as your main residence for at least 5 years (with justified exceptions).",
+      "Income no higher than 6.5 times the IPREM, increased for family situation or disability.",
+      "Purchase made or in progress from 1 January 2026.",
+      "Spanish, EU, EEA or Swiss nationality, or legal residence in Spain.",
+      "Not own another home in Spain, except for the exceptions in the call.",
+      "Maximum price of the home: €382,000, excluding taxes and fees."
+    ],
+    "importe": "€10,000 per home. With two owners, it is split by each one's share.",
+    "notas": "It can be combined with other public or private aid, as long as the total does not exceed the cost of the home.",
+    "pendientes": ["Press reports say applications are resolved in order of arrival and the window may close early if the €6 million budget runs out. Check the official call."],
+    "extras": ["Procedure on the e-office", "Government appointment booking"]
+  },
+  "nova-hipoteca-jove": {
+    "nombre": "Nova Hipoteca Jove (IBAVI mortgage guarantee)",
+    "organismo": "Balearic Housing Institute (IBAVI)",
+    "interesaA": ["Buyers who have not saved the deposit", "Under-40s, large or single-parent families, people with disabilities"],
+    "resumen": "IBAVI guarantees part of the home's price to the bank so the mortgage can cover the whole purchase. You do not receive money: it is a public guarantee. You apply through a participating bank.",
+    "requisitos": [
+      "Spanish or EU nationality, or legal residence in Spain.",
+      "At least 5 years of residence in the Balearic Islands, continuous or not.",
+      "Annual income up to 6.5 times the IPREM: €60,666.65 for one person and €68,250 for two or more.",
+      "Not own or have usufruct of another home in Spain (with exceptions).",
+      "Home in the Balearic Islands, used as your main residence while the guarantee lasts.",
+      "Maximum price €382,744.84, excluding fees and taxes.",
+      "The participating bank must finance at least 80% of the value."
+    ],
+    "importe": "Guarantee of up to 20% of the home's value for under-40s, large or single-parent families and people with disabilities; up to 15% in other cases. Processing fee: 0.50% of the guaranteed amount.",
+    "notas": "The scheme ends on 1 February 2028, or earlier if the budget runs out. The guarantee depends on the bank granting the loan.",
+    "extras": ["Application period", "Steps to follow"]
+  },
+  "registro-demandantes-vivienda-protegida": {
+    "nombre": "Registering for public (protected) housing",
+    "organismo": "Balearic Government · IBAVI",
+    "interesaA": ["People looking for public housing to rent or buy"],
+    "resumen": "To apply for newly built protected housing, from IBAVI or private developers, for sale or rent, you must first register here. Then you take part in each allocation process.",
+    "requisitos": [
+      "Live in the Balearic Islands.",
+      "Not own a home, except for the exceptions in IBAVI's allocation criteria.",
+      "Registration lasts 2 years and must be renewed before it expires.",
+      "You can choose up to 3 municipalities where you would be willing to live.",
+      "Time on the list does not give priority."
+    ],
+    "pendientes": ["Income limits and exact documents: check the official page."],
+    "extras": ["Housing FAQ", "Government public housing page"]
+  },
+  "itp-primera-vivienda": {
+    "nombre": "Property transfer tax (ITP) relief on a first home",
+    "organismo": "Balearic Government · Balearic Tax Agency (ATIB)",
+    "interesaA": ["Under-30s and people with disabilities buying their first home", "Other profiles with reduced rates"],
+    "resumen": "When you buy a second-hand home you pay Property Transfer Tax (ITP). The Balearic Islands have a tax credit on the first main home of under-30s and people with disabilities, and reduced rates in other cases. It is applied when you file the tax.",
+    "pendientes": [
+      "Maximum price, income limits, years of residence and minimum mortgage: unofficial sources give different figures, some changed in 2026. Confirm with ATIB.",
+      "Reduced rates for under-36s and large or single-parent families: to be confirmed with ATIB."
+    ],
+    "enlaceTexto": "Official Tax Council ruling on this relief"
+  },
+  "nie-tie-certificado-ue": {
+    "nombre": "NIE, TIE and EU registration certificate: appointments",
+    "organismo": "Immigration Office (Government Delegation) and National Police",
+    "interesaA": ["Foreign nationals living or about to live in the Balearic Islands"],
+    "resumen": "To get a NIE, have your fingerprints taken for the TIE card, or apply for the EU citizen registration certificate, you need an appointment in the official immigration booking system. Choose the province «Illes Balears» and then the procedure.",
+    "requisitos": [
+      "Book only on the official website: appointments are free.",
+      "Choose the province «Illes Balears» and the specific procedure you need.",
+      "Bring the documents required for your procedure."
+    ],
+    "pendientes": ["Documents and fee for each procedure: check the official information for the procedure you choose."],
+    "extras": ["Check the status of an immigration file"]
+  },
+  "dni-pasaporte": {
+    "nombre": "Renew or apply for a Spanish ID card (DNI) or passport",
+    "organismo": "National Police",
+    "interesaA": ["Spanish nationals"],
+    "resumen": "To renew or apply for a DNI or passport you need an appointment and must go in person to a National Police office. Book on the official website or by calling 060.",
+    "requisitos": [
+      "Book on the official website. Some intermediary websites charge for the same thing.",
+      "Go in person to the office on the day of your appointment."
+    ],
+    "pendientes": ["Fee and documents (photo, registration certificate if you moved): check the official DNI portal."],
+    "extras": ["Official DNI portal"]
+  },
+  "renovar-permiso-conducir": {
+    "nombre": "Renew your Spanish driving licence",
+    "organismo": "Directorate-General for Traffic (DGT)",
+    "interesaA": ["People whose driving licence is about to expire"],
+    "resumen": "The easiest way is an authorised Driver Medical Centre (Centro de Reconocimiento de Conductores): they do the medical report and process the renewal with the DGT. You can also renew at the DGT, in person or online, with that report. Renewing early does not make you lose any days of validity.",
+    "requisitos": [
+      "Medical fitness report from an authorised Driver Medical Centre.",
+      "Official application form (if you renew at the DGT).",
+      "Payment of the fee."
+    ],
+    "pendientes": [
+      "Fee amount and exemption for over-70s: reported by the press but not checked with the DGT.",
+      "How far in advance you can renew (press says 3 months): to be confirmed."
+    ]
+  },
+  "itv-mallorca": {
+    "nombre": "Vehicle inspection (ITV) in Mallorca: appointments",
+    "organismo": "Consell de Mallorca · ITV Service",
+    "interesaA": ["People with a car, motorbike or other vehicle in Mallorca"],
+    "resumen": "An appointment is required for the periodic inspection, on itv.mallorca.es or by phone. On that website you can also move your appointment to another station. There are stations in Palma, Can Pastilla, Inca, Manacor and Calvià.",
+    "requisitos": [
+      "Appointment required for the periodic inspection.",
+      "Appointment phone: 871 57 55 44.",
+      "Non-periodic inspections (for example, after modifications) are handled directly by the Consell's ITV Service, without the appointment system."
+    ],
+    "pendientes": ["Prices: check the Consell de Mallorca website."],
+    "extras": ["Appointments at itv.mallorca.es"]
+  },
+  "itv-menorca": {
+    "nombre": "Vehicle inspection (ITV) in Menorca: appointments",
+    "organismo": "Consell Insular de Menorca (run by the concession holder TÜV Rheinland Certio)",
+    "interesaA": ["People with a vehicle in Menorca"],
+    "resumen": "Menorca's ITV has stations in Maó and Ciutadella, run by a company on behalf of the island council. You only need the number plate to book.",
+    "requisitos": [
+      "Maó station: c. de Bajolí, 40 (POIMA). Phone 971 354 502.",
+      "You only need the number plate to book. Booking is free."
+    ],
+    "pendientes": [
+      "Press reports (September 2026) say booking by web, phone and in person works again after months of restrictions. Check with the Consell how to book now.",
+      "Ciutadella phone number and prices: to be confirmed."
+    ]
+  },
+  "itv-eivissa": {
+    "nombre": "Vehicle inspection (ITV) in Ibiza: appointments",
+    "organismo": "Consell d'Eivissa · ITV Service",
+    "interesaA": ["People with a vehicle in Ibiza"],
+    "resumen": "Book the periodic inspection on the Consell's ITV website or by phone. There is a fixed station in Santa Gertrudis and a mobile ITV at the Ibiza fairground.",
+    "requisitos": [
+      "Book online (itv.conselldeivissa.es) or by phone on 971 19 59 06.",
+      "Santa Gertrudis station: Ctra. Sant Miquel, km 2.7.",
+      "Re-inspection after a failed test: go to the same station, no appointment needed.",
+      "Approvals, duplicate technical sheets or pre-registration inspections: book by email at itv_eivissa@conselldeivissa.es."
+    ],
+    "importe": "Cars and light vehicles: €32.18. Motorbikes and mopeds: €16.18. Includes the €4.18 traffic fee.",
+    "extras": ["ITV appointment website", "ITV prices"]
+  },
+  "itv-formentera": {
+    "nombre": "Vehicle inspection (ITV) in Formentera: appointments",
+    "organismo": "Consell Insular de Formentera · Department of Mobility",
+    "interesaA": ["People with a vehicle in Formentera"],
+    "resumen": "Since April 2026, ITV appointments in Formentera are booked on a Consell website that shows the first free slot and other dates and times.",
+    "requisitos": ["Book on the Consell de Formentera's ITV website."],
+    "pendientes": ["Website address confirmed by local press; phone and prices to be confirmed with the Consell."],
+    "extras": ["Consell de Formentera website"]
+  },
+  "empadronamiento": {
+    "nombre": "Register at your town hall (empadronamiento)",
+    "organismo": "Your town hall",
+    "interesaA": ["Anyone living in a Balearic municipality"],
+    "resumen": "The municipal register (padrón) proves where you live. You register at the town hall where you live. Many items on this website require it: the resident travel discount, the Targeta Única, the Youth Rent Bonus and the home-purchase grant.",
+    "requisitos": [
+      "Each town hall explains how to apply and which documents to bring.",
+      "Palma example: registrations and changes of address are done in person at the citizen service offices (OAC) with an appointment. People over 65 can go without an appointment to the Son Moix OAC."
+    ],
+    "pendientes": [
+      "Palma's information sheet is dated March 2023; check it is still valid.",
+      "Other municipalities: check your town hall's website."
+    ],
+    "enlaceTexto": "Palma town hall information sheet (registration and change of address)"
+  },
+  "descuento-residente": {
+    "nombre": "Resident discount on flights and ferries",
+    "organismo": "Spanish State (information from the Balearic Government's Air Transport Service)",
+    "interesaA": ["Balearic residents travelling between islands or to mainland Spain"],
+    "resumen": "Balearic residents get a discount on scheduled flights between the islands and to the rest of Spain. The airline usually checks your residence automatically; if it cannot, you may be asked for your registration certificate.",
+    "requisitos": [
+      "Be registered (empadronado) in a Balearic municipality.",
+      "Be a Spanish, EU, EEA or Swiss citizen; a family member with residence rights; or a non-EU national with long-term residence.",
+      "Identify yourself with a DNI, NIE or passport."
+    ],
+    "importe": "75% off scheduled flight fares.",
+    "pendientes": ["The official page also covers ferries but only gives the percentage for flights. Check with the shipping company."]
+  },
+  "tarjeta-sanitaria": {
+    "nombre": "IB-Salut health card",
+    "organismo": "Balearic Health Service (IB-Salut)",
+    "interesaA": ["People entitled to public healthcare who live in the Balearic Islands"],
+    "resumen": "The individual health card gives you access to public healthcare in the Balearic Islands. The same procedure is used to apply for the first time, renew, get a duplicate or update your details.",
+    "requisitos": [
+      "Have a recognised right to public healthcare.",
+      "Recent colour photo, 26 × 32 mm.",
+      "Registration certificate (only in some municipalities).",
+      "Official application form.",
+      "Apply online (digital certificate, electronic DNI or Cl@ve permanente) or in person at a registry office."
+    ]
+  },
+  "targeta-unica-transporte": {
+    "nombre": "Targeta Única: Mallorca public transport card",
+    "organismo": "Balearic Government (TIB) and Palma town hall (EMT)",
+    "interesaA": ["Balearic residents who use public transport in Mallorca"],
+    "resumen": "One card for the train, metro, TIB intercity buses and Palma's EMT city buses. The Government has approved that Mallorca's intercity buses, train and metro remain free in 2026. Since March 2026 residents of Menorca, Ibiza and Formentera can also apply.",
+    "requisitos": [
+      "Be a resident of the Balearic Islands.",
+      "If you already have the Targeta Intermodal, it is still valid and you do not need the new card.",
+      "Apply online on the TIB website or in person with an appointment (one appointment per card).",
+      "Offices in Mallorca: TIB at the Intermodal Station, Alcúdia, Inca and Manacor; EMT Palma; town hall offices in Calvià, Llucmajor and Marratxí.",
+      "Menorca: citizen service offices in Maó and Ciutadella, with an appointment. Ibiza: Consell citizen service, with an appointment. Formentera: Consell offices in Sant Francesc and Sant Ferran."
+    ],
+    "pendientes": ["Exact conditions for free travel (for example, minimum balance) and whether EMT city buses are included: to be confirmed with TIB and EMT."],
+    "extras": ["Government FAQ", "Procedure on the e-office", "Free transport in 2026 (TIB)"]
+  },
+  "inscripcion-soib": {
+    "nombre": "Register as a jobseeker (SOIB)",
+    "organismo": "Balearic Employment Service (SOIB)",
+    "interesaA": ["People out of work or looking for another job"],
+    "resumen": "Registering with SOIB is free and gives access to job offers, training and guidance. It is compulsory if you receive unemployment benefit. The first time, you must go to a SOIB office.",
+    "requisitos": [
+      "First registration: in person at a SOIB office.",
+      "Compulsory for people receiving unemployment benefit.",
+      "No deadline: you can register at any time."
+    ]
+  },
+  "renta-social-garantizada": {
+    "nombre": "Guaranteed Social Income (RESOGA)",
+    "organismo": "Balearic Government · Department of Families, Social Welfare and Dependency Care",
+    "interesaA": ["Households in economic hardship"],
+    "resumen": "A regular payment for households without enough income who do not receive the national Minimum Living Income. You must apply for the Minimum Living Income first.",
+    "requisitos": [
+      "Be in economic hardship.",
+      "Have applied for the Minimum Living Income first, or declare that you do not meet its requirements.",
+      "Have applied for any other benefits or pensions you are entitled to.",
+      "Be registered in a Balearic municipality when you apply.",
+      "Uninterrupted legal residence in the Balearic Islands for at least 3 years, with exceptions.",
+      "If you neither work nor study, be registered with SOIB.",
+      "The household must have existed for at least 6 months (unless you live alone)."
+    ],
+    "pendientes": [
+      "The RESOGA website says 3 years of residence, but the e-office page mentions 12 months. Confirm before applying.",
+      "Amount: check the official page."
+    ],
+    "extras": ["Procedure on the e-office"]
+  },
+  "ingreso-minimo-vital": {
+    "nombre": "Minimum Living Income (Ingreso Mínimo Vital)",
+    "organismo": "Social Security (National Social Security Institute)",
+    "interesaA": ["Households with very low income"],
+    "resumen": "A national benefit for households with very low income. In the Balearic Islands it is the first step: you must apply for it before the Guaranteed Social Income.",
+    "pendientes": ["Requirements, amounts and how to apply: not checked on the official website. Ask Social Security."],
+    "extras": ["Social Security e-office"]
+  },
+  "multas-dgt": {
+    "nombre": "Pay a DGT traffic fine",
+    "organismo": "Directorate-General for Traffic (DGT)",
+    "interesaA": ["People who received a traffic fine from the DGT, for example from the Guardia Civil on the road"],
+    "resumen": "If you pay within 20 calendar days of being notified, the fine is reduced by 50%. You can pay online, in the miDGT app, by calling 060, at CaixaBank or at the post office. First check who fined you: town hall fines are paid to the town hall, not the DGT.",
+    "requisitos": [
+      "50% off if you pay within 20 calendar days of receiving the notice. Paying with the discount means giving up the right to appeal.",
+      "After that you pay 100%. If you do not pay, the Tax Agency collects it with a 20% surcharge.",
+      "No deferral or instalments.",
+      "To pay online you need the file number and the notification date. Card and Bizum accepted.",
+      "Phone 060 (from abroad: +34 902 887 060), card payment, 24 hours.",
+      "In person: CaixaBank branches and cash machines (card or cash) or post offices (cash only, with a postal fee).",
+      "If you were not driving, identify the driver within 10 days when asked; failing to do so is a very serious offence.",
+      "The DGT never sends fines by email: be wary of such messages."
+    ],
+    "importe": "50% off if you pay within 20 calendar days (not available for every offence). Paying is free except for the postal fee.",
+    "extras": ["What to do if you have received a fine (DGT)"]
+  },
+  "multas-palma": {
+    "nombre": "Pay a traffic or ORA parking fine in Palma",
+    "organismo": "Palma town hall (Mobility and Municipal Collection)",
+    "interesaA": ["People with a traffic or regulated-parking (ORA) fine in Palma"],
+    "resumen": "Traffic and ORA fines issued by Palma town hall are paid to the town hall, not the DGT. You can pay online on the e-office, at the Municipal Collection office or at several banks. Paying gives a 50% reduction, which you lose if you appeal.",
+    "requisitos": [
+      "Online: on Palma's e-office, with the ticket reference, the notice or the C60 code.",
+      "In person: Recaptació Municipal, Plaça de Santa Eulàlia, 9, 1st floor.",
+      "Banks: CaixaBank, BBVA, Banca March, Santander and Caixa Colonya.",
+      "50% reduction; lost if you file an appeal.",
+      "Look up fines at mulcars.palma.cat. Identify the driver at identificacioconductor.palma.cat.",
+      "There is a course to cancel some fines («Respectant hi guanya tothom»): once every 3 years and only for the offences included.",
+      "Questions: Mobility, phone 971 22 55 22."
+    ],
+    "importe": "50% off if you pay without appealing.",
+    "pendientes": ["Exact deadline for the 50% reduction: Palma's page does not say. Check your notice."],
+    "enlaceTexto": "Palma town hall fines information",
+    "extras": ["Pay online (Palma e-office)", "Appeals (Multes.04)"]
+  },
+  "multas-ayuntamientos-atib": {
+    "nombre": "Fines from other town halls and the Government: where to pay",
+    "organismo": "The authority that fined you · Balearic Tax Agency (ATIB)",
+    "interesaA": ["People with a fine from a town hall other than Palma, the Government or another authority", "Non-traffic fines (local bylaws, administrative penalties)"],
+    "resumen": "Each fine is paid, checked or appealed with the authority that issued it, shown on the notice. Many Balearic town halls have ATIB collect for them: in ATIB's Cartero Virtual you can look up fines, taxes and debts that ATIB collects.",
+    "requisitos": [
+      "Check on the notice who fined you: DGT, town hall, Government or another body.",
+      "For ATIB's Cartero Virtual you need your taxpayer code, or a digital certificate, electronic DNI or Cl@ve.",
+      "If ATIB does not collect it, follow the payment instructions on your notice or ask your town hall."
+    ],
+    "pendientes": [
+      "Which town halls have delegated fine collection to ATIB: the website gives no list. Check your notice.",
+      "Whether the Cartero Virtual lets you pay fines or only look them up: to be confirmed in ATIB's FAQ.",
+      "Early-payment reductions on non-traffic fines depend on each regulation; check your notice."
+    ],
+    "enlaceTexto": "ATIB Cartero Virtual"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "idioma": "de",
+  "nombreIdioma": "Deutsch",
+  "idiomaEtiqueta": "Sprache",
+  "titulo": "Ayudas Baleares",
+  "lema": "Öffentliche Hilfen, Behördengänge und Bußgelder auf den Balearen, verständlich erklärt und mit dem offiziellen Link zu jedem Eintrag.",
+  "aviso": "Diese Informationen dienen nur zur Orientierung. Prüfe Voraussetzungen und Fristen auf der offiziellen Seite.",
+  "avisoDerecho": "Diese Website entscheidet nicht, ob du Anspruch auf eine Hilfe hast, und stellt keine Anträge für dich.",
+  "avisoIdioma": "Offizielle Seiten und Formulare sind meist auf Spanisch oder Katalanisch. Offizielle Namen bleiben auf Spanisch, damit du sie wiedererkennst.",
+  "pestanaBuscar": "Suchen",
+  "pestanaCuestionario": "Was könnte für mich passen",
+  "buscarEtiqueta": "Suche nach Stichwort",
+  "buscarPlaceholder": "Zum Beispiel: Miete, NIE, ITV, Bußgeld…",
+  "filtroIsla": "Insel",
+  "filtroMunicipio": "Gemeinde",
+  "filtroCategoria": "Thema",
+  "filtroEstado": "Frist",
+  "todas": "Alle",
+  "todos": "Alle",
+  "limpiar": "Filter zurücksetzen",
+  "resultadosUno": "1 Ergebnis",
+  "resultadosVarios": "{n} Ergebnisse",
+  "sinResultados": "Keine Einträge mit diesen Filtern. Versuche es mit weniger Filtern oder einem anderen Wort.",
+  "estados": {
+    "abierta": "Offen",
+    "proxima": "Demnächst",
+    "cerrada": "Abgelaufen",
+    "por-confirmar": "Noch unbestätigt",
+    "permanente": "Ohne Frist"
+  },
+  "tipos": {
+    "ayuda": "Hilfe",
+    "tramite": "Behördengang"
+  },
+  "categorias": {
+    "alquiler": "Miete",
+    "vivienda": "Wohnen und Kauf",
+    "documentacion": "Dokumente",
+    "vehiculo": "Auto und Führerschein",
+    "transporte": "Verkehr",
+    "salud": "Gesundheit",
+    "empleo": "Arbeit",
+    "ingresos": "Grundsicherung",
+    "multas": "Bußgelder"
+  },
+  "campoOrganismo": "Zuständig",
+  "campoDonde": "Wo",
+  "campoImporte": "Betrag",
+  "campoPlazo": "Frist",
+  "campoInteresa": "Für wen interessant",
+  "campoRequisitos": "Veröffentlichte Voraussetzungen",
+  "campoNotas": "Gut zu wissen",
+  "campoPendientes": "Unbestätigte Angaben",
+  "campoMasEnlaces": "Weitere offizielle Links",
+  "consultaOficial": "Siehe offizielle Ausschreibung",
+  "verOficial": "Offizielle Seite öffnen",
+  "comprobado": "Geprüft am {fecha}",
+  "codigoSIA": "SIA-Code {codigo}",
+  "verDetalles": "Voraussetzungen und Details anzeigen",
+  "verificacionParcial": "Einige Angaben unbestätigt",
+  "todasIslas": "Alle Inseln",
+  "desde": "Vom {inicio} bis {fin}",
+  "cuestionarioIntro": "Beantworte so viel du möchtest: Alle Fragen sind freiwillig und deine Antworten werden nicht gespeichert. Wir fragen nie nach Name, Ausweisnummer, Adresse oder Bankdaten.",
+  "cuestionarioBoton": "Zeigen, was für mich passen könnte",
+  "cuestionarioReiniciar": "Antworten löschen",
+  "cuestionarioResultados": "Das könnte dich interessieren",
+  "cuestionarioSinRespuestas": "Beantworte mindestens eine Frage, um Ergebnisse zu sehen.",
+  "cuestionarioSinResultados": "Zu diesen Antworten passen keine Einträge. Ändere eine Antwort oder nutze die Suche.",
+  "porQue": "Warum es erscheint",
+  "sinRespuesta": "Keine Angabe",
+  "preguntas": {
+    "edad": {
+      "texto": "Wie alt bist du?",
+      "opciones": {
+        "<30": "Unter 30",
+        "30-35": "30 bis 35",
+        "36-40": "36 bis 40",
+        "41-64": "41 bis 64",
+        "65+": "65 oder älter"
+      }
+    },
+    "isla": {
+      "texto": "Auf welcher Insel wohnst du?"
+    },
+    "residencia": {
+      "texto": "Wie lange lebst du schon auf den Balearen?",
+      "opciones": {
+        "<1": "Weniger als 1 Jahr",
+        "1-3": "1 bis 3 Jahre",
+        "3-5": "3 bis 5 Jahre",
+        "5+": "5 Jahre oder länger"
+      }
+    },
+    "vivienda": {
+      "texto": "Wie wohnst du?",
+      "opciones": {
+        "alquilo-vivienda": "Ich miete eine Wohnung",
+        "alquilo-habitacion": "Ich miete ein Zimmer",
+        "quiero-comprar": "Ich möchte kaufen oder kaufe gerade",
+        "propia": "Ich wohne im Eigentum",
+        "otra": "Anders"
+      }
+    },
+    "empleo": {
+      "texto": "Wie ist deine berufliche Situation?",
+      "opciones": {
+        "trabaja": "Ich arbeite",
+        "paro": "Ich bin arbeitslos oder suche Arbeit",
+        "estudia": "Ich studiere",
+        "jubilado": "Ich bin in Rente",
+        "otro": "Anders"
+      }
+    },
+    "nacionalidad": {
+      "texto": "Welche Staatsangehörigkeit hast du?",
+      "opciones": {
+        "es": "Spanisch",
+        "ue": "Ein anderes EU- oder EWR-Land oder die Schweiz",
+        "otra": "Ein anderes Land"
+      }
+    },
+    "vehiculo": {
+      "texto": "Hast du ein Auto, Motorrad oder anderes Fahrzeug oder einen Führerschein?",
+      "opciones": {
+        "si": "Ja",
+        "no": "Nein"
+      }
+    },
+    "multa": {
+      "texto": "Hast du ein offenes Bußgeld (Verkehr oder anderes)?",
+      "opciones": {
+        "si": "Ja",
+        "no": "Nein"
+      }
+    },
+    "ingresos": {
+      "texto": "Hat dein Haushalt ein geringes Einkommen oder Schwierigkeiten, über die Runden zu kommen?",
+      "opciones": {
+        "si": "Ja",
+        "no": "Nein"
+      }
+    },
+    "familia": {
+      "texto": "Mit wem lebst du zusammen?",
+      "opciones": {
+        "solo": "Ich lebe allein",
+        "pareja": "Mit Partner oder Partnerin, ohne Kinder",
+        "hijos": "Mit Kindern oder unterhaltsberechtigten Personen",
+        "otros": "In einer Wohngemeinschaft"
+      }
+    },
+    "discapacidad": {
+      "texto": "Hast du oder jemand in deinem Haushalt eine anerkannte Behinderung?",
+      "opciones": {
+        "si": "Ja",
+        "no": "Nein"
+      }
+    }
+  },
+  "razones": {
+    "edad": "Dein Alter passt zur veröffentlichten Grenze (höchstens {max} Jahre).",
+    "vivienda": "Passt zu deiner Wohnsituation: {valor}.",
+    "empleo": "Passt zu deiner beruflichen Situation: {valor}.",
+    "nacionalidad": "Es ist ein Behördengang für Menschen mit deiner Staatsangehörigkeit.",
+    "vehiculo": "Du hast ein Fahrzeug oder einen Führerschein.",
+    "multa": "Du hast angegeben, dass du ein offenes Bußgeld hast.",
+    "ingresos": "Sie richtet sich an Haushalte mit geringem Einkommen.",
+    "residencia": "Verlangt mindestens {min} Jahre Wohnsitz auf den Balearen, und du hast angegeben, das zu erfüllen.",
+    "isla": "Gilt auf {isla}.",
+    "general": "Ein üblicher Behördengang für alle Einwohner.",
+    "cerrada": "Die Frist ist abgelaufen; wir zeigen den Eintrag, falls er erneut ausgeschrieben wird.",
+    "discapacidad": "Es gibt besondere Bedingungen für Menschen mit Behinderung; prüfe die Voraussetzungen.",
+    "familia": "Es gibt besondere Bedingungen für kinderreiche und Alleinerziehenden-Familien; prüfe die Voraussetzungen."
+  },
+  "pie": "Angaben geprüft bei offiziellen Quellen: Balearenregierung, BOIB, Inselräte, Gemeinden und spanischer Staat. Jeder Eintrag zeigt das Prüfdatum.",
+  "errorCarga": "Die Daten konnten nicht geladen werden. Wenn du die Datei direkt geöffnet hast, öffne sie über einen lokalen Server (siehe README).",
+  "nuevaPestana": "öffnet in neuem Tab",
+  "secciones": "Bereiche"
+}

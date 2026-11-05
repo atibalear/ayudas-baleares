@@ -3,7 +3,10 @@
 Buscador de ayudas y trámites de las Illes Balears (Mallorca, Menorca, Eivissa y Formentera).
 Primera versión centrada en **vivienda y alquiler**, más los trámites en los que más gente se pierde:
 NIE/TIE, DNI, permiso de conducir, ITV por isla, empadronamiento, tarjeta sanitaria, descuento de
-residente, Targeta Única de transporte, inscripción en el SOIB e ingresos mínimos.
+residente, Targeta Única de transporte, inscripción en el SOIB, ingresos mínimos y **pago de multas**
+(DGT, Ajuntament de Palma y resto de ayuntamientos o Govern).
+
+Disponible en **español, inglés y alemán**.
 
 Datos revisados el **5 de noviembre de 2026**.
 
@@ -13,7 +16,8 @@ Datos revisados el **5 de noviembre de 2026**.
 |---|---|
 | `index.html` | La web: diseño y funcionamiento. No contiene datos de ayudas. |
 | `ayudas.json` | **Todas las fichas.** Es el único archivo que hay que tocar para actualizar ayudas. |
-| `textos.es.json` | Todos los textos de la interfaz en español. Copiándolo a `textos.ca.json` se añade el catalán. |
+| `textos.es.json`, `textos.en.json`, `textos.de.json` | Textos de la interfaz en cada idioma. |
+| `fichas.en.json`, `fichas.de.json` | Traducción de los textos de cada ficha (nombre, resumen, requisitos…). Las fechas, enlaces y estados salen siempre de `ayudas.json`. |
 | `README.md` | Este documento. |
 
 ## Cómo abrir la web en tu ordenador
@@ -78,11 +82,19 @@ una respuesta los contradice. Las preguntas sin responder no excluyen nada.
 | `general` | `true` | Trámite útil para cualquier residente. |
 | `avisos` | `["discapacidad","familia"]` | Añade una nota si aplica, sin excluir. |
 
-## Cómo añadir el catalán
+## Idiomas
+
+La web tiene botones ES, EN y DE. Recuerda el idioma elegido y, la primera vez, usa el del navegador.
+
+- **Al añadir o cambiar una ficha en `ayudas.json`**, añade o actualiza su traducción en `fichas.en.json` y `fichas.de.json`, con la misma clave `id`. Si falta, la ficha se muestra en español.
+- En las traducciones, `requisitos`, `interesaA` y `pendientes` deben tener los mismos elementos y en el mismo orden que en español. `extras` traduce, en orden, los textos de `enlacesExtra`.
+- Los nombres oficiales (empadronamiento, NIE, Targeta Única…) se mantienen y el buscador encuentra las fichas también por su nombre en español.
+
+**Para añadir otro idioma (por ejemplo, catalán):**
 
 1. Copia `textos.es.json` como `textos.ca.json` y traduce los valores (no las claves).
-2. En `index.html`, busca `const lang = "es"` y cambia el valor o añade un selector de idioma.
-3. Para traducir también las fichas, añade campos como `nombre_ca` y `resumen_ca` en `ayudas.json`.
+2. Copia `fichas.en.json` como `fichas.ca.json` y traduce los textos.
+3. En `index.html`, añade `"ca"` a la lista `IDIOMAS` y un botón `<button type="button" data-lang="ca" lang="ca">CA</button>` junto a los demás.
 
 ## Fuentes oficiales consultadas (5/11/2026)
 
@@ -100,6 +112,9 @@ una respuesta los contradice. Las preguntas sin responder no excluyen nada.
 - Descuento de residente: [Servicio de Transporte Aéreo del Govern](https://www.caib.es/sites/transportaeri/es/descuentos_de_residente-3903/)
 - Tarjeta sanitaria: [sede electrónica](https://www.caib.es/seucaib/es/200/personas/tramites/tramite/5339364)
 - Targeta Única: [TIB](https://www.tib.org/es/billetes-y-tarifas/tarjeta-unica), [preguntas frecuentes del Govern](https://www.caib.es/webgoib/es/w/targeta-unica-de-transport-public-de-mallorca), [gratuidad 2026](https://www.tib.org/es/w/el-transport-p%C3%BAblic-interurb%C3%A0-mant%C3%A9-la-gratu%C3%AFtat-l-any-2026)
+- Multas de la DGT: [pago de multas](https://sede.dgt.gob.es/es/multas/pago-de-multas/) y [qué hacer si has recibido una multa](https://www.dgt.es/nuestros-servicios/multas-y-sanciones/que-hacer-si-has-recibido-una-multa/)
+- Multas de Palma: [información del Ajuntament](https://mobipalma.mobi/ca/mobilitat/tramits-i-gestions/multes/), [pago por internet](https://seuelectronica.palma.cat/acceso-pagar-por-internet)
+- Multas de otros ayuntamientos y del Govern: [Cartero Virtual de la ATIB](https://www.atib.es/TL/contenidoCartero.aspx?Id=12200&lang=es)
 - Inscripción en el SOIB: [sede electrónica](https://caib.es/seucaib/es/200/personas%20/tramites/tramite/6204695)
 - Renta Social Garantizada: [web de la RESOGA](https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/) y [sede electrónica](https://www.caib.es/seucaib/es/tramites/tramite/2615446/)
 
@@ -117,6 +132,8 @@ una respuesta los contradice. Las preguntas sin responder no excluyen nada.
 10. **Targeta Única:** condiciones exactas de gratuidad y si incluye el bus urbano de la EMT.
 11. **Descuento de residente:** porcentaje en transporte marítimo.
 12. **Vivienda protegida:** límites de ingresos.
+13. **Multas de Palma:** plazo exacto para pagar con el 50% de reducción.
+14. **Multas de otros ayuntamientos:** qué ayuntamientos cobran a través de la ATIB y si el Cartero Virtual permite pagar multas o solo consultarlas.
 
 ## Siguientes pasos sugeridos
 
@@ -124,3 +141,4 @@ una respuesta los contradice. Las preguntas sin responder no excluyen nada.
 - Añadir categorías: familia (cheque canguro, ayudas por hijos), estudios y becas, discapacidad, energía (bono social).
 - Añadir ayudas de consells insulares y ayuntamientos grandes (Palma, Eivissa, Maó, Ciutadella, Calvià, Manacor).
 - Traducir al catalán.
+- Añadir las multas de otros ayuntamientos grandes (Eivissa, Maó, Ciutadella, Calvià, Manacor).

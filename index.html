@@ -69,6 +69,12 @@ h1 {
 }
 .isles { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
 .lema { margin: .75rem 0 0; max-width: 40rem; color: var(--muted); font-size: 1.1rem; }
+.lema.small { font-size: .95rem; margin-top: .4rem; }
+.toprow { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+.langs { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.langs button { font: 700 .9rem var(--f-mono); color: var(--muted); background: none; border: 0; padding: .5rem .75rem; cursor: pointer; min-width: 2.75rem; }
+.langs button + button { border-left: 1px solid var(--line); }
+.langs button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
 .aviso {
   margin-top: 1.25rem; display: flex; gap: .75rem; align-items: flex-start;
   background: var(--warn-bg); color: var(--ink); border-radius: var(--r);
@@ -145,6 +151,7 @@ summary { cursor: pointer; font-weight: 700; color: var(--accent); list-style-po
 .why { background: var(--accent-soft); border-radius: 8px; padding: .7rem .9rem; }
 .why h4 { margin: 0 0 .3rem; font-size: .9rem; color: var(--accent); }
 .why ul { margin: 0; padding-left: 1.1rem; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--r); padding: 1.5rem; color: var(--muted); }
 
 /* Cuestionario */
@@ -177,18 +184,26 @@ footer p { margin: .3rem 0; max-width: 65ch; }
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brand">
-      <h1 id="t-titulo">Ayudas Baleares</h1>
-      <span class="isles">Mallorca · Menorca · Eivissa · Formentera</span>
+    <div class="toprow">
+      <div class="brand">
+        <h1 id="t-titulo">Ayudas Baleares</h1>
+        <span class="isles">Mallorca · Menorca · Eivissa · Formentera</span>
+      </div>
+      <div class="langs" role="group" id="langs">
+        <button type="button" data-lang="es" lang="es">ES</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+        <button type="button" data-lang="de" lang="de">DE</button>
+      </div>
     </div>
     <p class="lema" id="t-lema"></p>
+    <p class="lema small" id="t-idioma" hidden></p>
     <div class="aviso" role="note">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 7v6M12 16.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
       <div><strong id="t-aviso"></strong> <span id="t-aviso2"></span></div>
     </div>
   </header>
 
-  <nav class="tabs" role="tablist" aria-label="Secciones">
+  <nav class="tabs" role="tablist" id="tabs">
     <button class="tab" role="tab" id="tab-buscar" aria-controls="panel-buscar" aria-selected="true"></button>
     <button class="tab" role="tab" id="tab-cuestionario" aria-controls="panel-cuestionario" aria-selected="false"></button>
   </nav>
@@ -229,16 +244,21 @@ footer p { margin: .3rem 0; max-width: 65ch; }
 <script>
 (() => {
   const $ = (s, r = document) => r.querySelector(s);
-  let T = {}, D = {}, FICHAS = [];
+  const IDIOMAS = ["es", "en", "de"];
+  let T = {}, D = null, BASE = [], FICHAS = [], LANG = "es";
   const ORDEN = { "abierta": 0, "proxima": 1, "permanente": 2, "por-confirmar": 3, "cerrada": 4 };
   const EDAD = { "<30": [18, 29], "30-35": [30, 35], "36-40": [36, 40], "41-64": [41, 64], "65+": [65, 120] };
   const RESID = { "<1": 0, "1-3": 1, "3-5": 3, "5+": 5 };
+  const PREG = ["edad", "isla", "residencia", "vivienda", "empleo", "nacionalidad", "vehiculo", "multa", "ingresos", "familia", "discapacidad"];
 
-  const fmt = (s, o = {}) => s.replace(/\{(\w+)\}/g, (_, k) => o[k] ?? "");
+  const fmt = (s, o = {}) => String(s ?? "").replace(/\{(\w+)\}/g, (_, k) => o[k] ?? "");
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-  const fecha = iso => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return `${d}/${m}/${y}`; };
+  const fecha = iso => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return LANG === "de" ? `${d}.${m}.${y}` : `${d}/${m}/${y}`; };
   const hoyISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
+  const cat = k => (T.categorias && T.categorias[k]) || D.categorias[k] || k;
+  const guardar = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  const leer = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
 
   // El estado se recalcula con las fechas publicadas, así no queda "abierta" una convocatoria vencida.
   function estadoReal(f) {
@@ -251,20 +271,35 @@ footer p { margin: .3rem 0; max-width: 65ch; }
     return f.estado;
   }
 
-  async function cargar() {
-    const lang = "es"; // Para añadir catalán: crea textos.ca.json y cambia o detecta este valor.
-    const [t, d] = await Promise.all([
-      fetch(`textos.${lang}.json`).then(r => { if (!r.ok) throw 0; return r.json(); }),
-      fetch("ayudas.json").then(r => { if (!r.ok) throw 0; return r.json(); })
+  // Las fichas traducidas (fichas.en.json, fichas.de.json) solo cambian textos; fechas, enlaces y criterios salen siempre de ayudas.json.
+  function traducir(f, tr) {
+    if (!tr) return { ...f };
+    const out = { ...f };
+    ["nombre", "organismo", "resumen", "interesaA", "requisitos", "importe", "notas", "pendientes", "enlaceTexto"].forEach(k => { if (tr[k] != null) out[k] = tr[k]; });
+    if (tr.extras && f.enlacesExtra) out.enlacesExtra = f.enlacesExtra.map((e, i) => ({ ...e, texto: tr.extras[i] || e.texto }));
+    return out;
+  }
+
+  async function cargarJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(url); return r.json(); }
+  async function cargar(lang) {
+    if (!D) { D = await cargarJSON("ayudas.json"); BASE = D.fichas; }
+    const [t, tr] = await Promise.all([
+      cargarJSON(`textos.${lang}.json`),
+      lang === "es" ? Promise.resolve({}) : cargarJSON(`fichas.${lang}.json`).catch(() => ({}))
     ]);
-    T = t; D = d; FICHAS = d.fichas.map(f => ({ ...f, est: estadoReal(f) }));
-    document.documentElement.lang = t.idioma;
+    T = t; LANG = lang;
+    FICHAS = BASE.map(f => { const x = traducir(f, tr[f.id]); x.est = estadoReal(f); x._es = f; return x; });
+    document.documentElement.lang = lang;
   }
 
   function textos() {
     $("#t-lema").textContent = T.lema;
+    $("#t-idioma").textContent = T.avisoIdioma || ""; $("#t-idioma").hidden = !T.avisoIdioma;
     $("#t-aviso").textContent = T.aviso;
     $("#t-aviso2").textContent = T.avisoDerecho;
+    $("#tabs").setAttribute("aria-label", T.secciones);
+    $("#langs").setAttribute("aria-label", T.idiomaEtiqueta);
+    document.querySelectorAll("#langs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
     $("#tab-buscar").textContent = T.pestanaBuscar;
     $("#tab-cuestionario").textContent = T.pestanaCuestionario;
     $("#l-q").textContent = T.buscarEtiqueta;
@@ -281,7 +316,9 @@ footer p { margin: .3rem 0; max-width: 65ch; }
 
   // ---------- Filtros ----------
   function opciones(sel, items, todas) {
+    const prev = sel.value;
     sel.innerHTML = `<option value="">${esc(todas)}</option>` + items.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join("");
+    if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
   }
   function rellenarMunicipios() {
     const isla = $("#f-isla").value, sel = $("#f-muni"), prev = sel.value;
@@ -290,11 +327,13 @@ footer p { margin: .3rem 0; max-width: 65ch; }
       `<optgroup label="${esc(i)}">${D.municipios[i].map(m => `<option value="${esc(i + "|" + m)}">${esc(m)}</option>`).join("")}</optgroup>`).join("");
     if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
   }
-  function montarFiltros() {
+  function rellenarFiltros() {
     opciones($("#f-isla"), D.islas.map(i => [i, i]), T.todas);
-    opciones($("#f-cat"), Object.entries(D.categorias), T.todos);
+    opciones($("#f-cat"), Object.keys(D.categorias).map(k => [k, cat(k)]), T.todos);
     opciones($("#f-est"), Object.keys(ORDEN).map(k => [k, T.estados[k]]), T.todos);
     rellenarMunicipios();
+  }
+  function eventosFiltros() {
     $("#f-isla").addEventListener("change", () => { rellenarMunicipios(); buscar(); });
     ["#f-muni", "#f-cat", "#f-est"].forEach(s => $(s).addEventListener("change", buscar));
     $("#q").addEventListener("input", buscar);
@@ -311,13 +350,16 @@ footer p { margin: .3rem 0; max-width: 65ch; }
     }
     return true;
   }
+  // Se busca en el idioma elegido y también en el texto original en español (nombres oficiales como "empadronamiento").
   function texto(f) {
-    return norm([f.nombre, f.organismo, f.resumen, D.categorias[f.categoria], (f.interesaA || []).join(" "), (f.requisitos || []).join(" "), f.notas, T.tipos[f.tipo]].join(" "));
+    const o = f._es;
+    return norm([f.nombre, f.organismo, f.resumen, cat(f.categoria), (f.interesaA || []).join(" "), (f.requisitos || []).join(" "), f.notas, T.tipos[f.tipo],
+      o.nombre, o.resumen, D.categorias[o.categoria]].join(" "));
   }
   function buscar() {
     const q = norm($("#q").value).trim().split(/\s+/).filter(Boolean);
-    const isla = $("#f-isla").value, muni = $("#f-muni").value, cat = $("#f-cat").value, est = $("#f-est").value;
-    const res = FICHAS.filter(f => aplica(f, isla, muni) && (!cat || f.categoria === cat) && (!est || f.est === est) && q.every(w => texto(f).includes(w)))
+    const isla = $("#f-isla").value, muni = $("#f-muni").value, c = $("#f-cat").value, est = $("#f-est").value;
+    const res = FICHAS.filter(f => aplica(f, isla, muni) && (!c || f.categoria === c) && (!est || f.est === est) && q.every(w => texto(f).includes(w)))
       .sort((a, b) => ORDEN[a.est] - ORDEN[b.est]);
     $("#count").textContent = res.length === 1 ? T.resultadosUno : fmt(T.resultadosVarios, { n: res.length });
     $("#list").innerHTML = res.length ? res.map(f => tarjeta(f)).join("") : `<li class="empty">${esc(T.sinResultados)}</li>`;
@@ -333,12 +375,13 @@ footer p { margin: .3rem 0; max-width: 65ch; }
     const lista = a => `<ul>${a.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
     const why = razones && razones.length ? `<div class="why"><h4>${esc(T.porQue)}</h4>${lista(razones)}</div>` : "";
     const req = f.requisitos && f.requisitos.length ? `<div><h4>${esc(T.campoRequisitos)}</h4>${lista(f.requisitos)}</div>` : `<div><h4>${esc(T.campoRequisitos)}</h4><p class="pend">${esc(T.consultaOficial)}</p></div>`;
-    const extra = f.enlacesExtra && f.enlacesExtra.length ? `<div><h4>${esc(T.campoMasEnlaces)}</h4><ul>${f.enlacesExtra.map(e => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.texto)}</a></li>`).join("")}</ul></div>` : "";
+    const ext = `<span class="sr">(${esc(T.nuevaPestana)})</span>`;
+    const extra = f.enlacesExtra && f.enlacesExtra.length ? `<div><h4>${esc(T.campoMasEnlaces)}</h4><ul>${f.enlacesExtra.map(e => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.texto)}</a> ${ext}</li>`).join("")}</ul></div>` : "";
     const pend = f.pendientes && f.pendientes.length ? `<div class="box-pend"><h4>${esc(T.campoPendientes)}</h4>${lista(f.pendientes)}</div>` : "";
     return `<li class="card is-${f.est}" id="ficha-${esc(f.id)}">
       <div class="meta">
         <span class="pill st-${f.est}">${esc(T.estados[f.est])}</span>
-        <span class="tag">${esc(T.tipos[f.tipo])}</span><span class="tag">${esc(D.categorias[f.categoria])}</span>
+        <span class="tag">${esc(T.tipos[f.tipo])}</span><span class="tag">${esc(cat(f.categoria))}</span>
         ${f.verificacion === "parcial" ? `<span class="tag pend">${esc(T.verificacionParcial)}</span>` : ""}
       </div>
       <h3>${esc(f.nombre)}</h3>
@@ -362,15 +405,15 @@ footer p { margin: .3rem 0; max-width: 65ch; }
       <div class="foot">
         <a class="btn" href="${esc(f.enlace)}" target="_blank" rel="noopener">${esc(f.enlaceTexto || T.verOficial)}
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">(se abre en otra pestaña)</span></a>
+          ${ext}</a>
         <span class="checked mono">${esc(fmt(T.comprobado, { fecha: fecha(f.comprobado) }))}${f.codigoSIA ? " · " + esc(fmt(T.codigoSIA, { codigo: f.codigoSIA })) : ""}</span>
       </div>
     </li>`;
   }
 
   // ---------- Cuestionario ----------
-  const PREG = ["edad", "isla", "residencia", "vivienda", "empleo", "nacionalidad", "vehiculo", "ingresos", "familia", "discapacidad"];
   function montarCuestionario() {
+    const prev = $("#quiz").innerHTML ? new FormData($("#quiz")) : null;
     const html = PREG.map(k => {
       const p = T.preguntas[k];
       const ops = k === "isla" ? D.islas.map(i => [i, i]) : Object.entries(p.opciones);
@@ -380,24 +423,27 @@ footer p { margin: .3rem 0; max-width: 65ch; }
       </div></fieldset>`;
     }).join("");
     $("#quiz").innerHTML = html + `<div class="qactions"><button class="btn" type="submit">${esc(T.cuestionarioBoton)}</button><button class="btn ghost" type="reset">${esc(T.cuestionarioReiniciar)}</button></div>`;
-    $("#quiz").addEventListener("submit", e => { e.preventDefault(); evaluar(); });
-    $("#quiz").addEventListener("reset", () => setTimeout(() => { $("#qres").innerHTML = ""; }, 0));
+    if (prev) PREG.forEach(k => { const v = prev.get(k); if (v) { const el = [...document.getElementsByName(k)].find(i => i.value === v); if (el) el.checked = true; } });
   }
-  function evaluar() {
+  let quizMostrado = false;
+  function evaluar(enfocar = true) {
     const fd = new FormData($("#quiz")), a = {};
     PREG.forEach(k => { const v = fd.get(k); if (v) a[k] = v; });
     const out = $("#qres");
-    if (!Object.keys(a).length) { out.innerHTML = `<p class="empty">${esc(T.cuestionarioSinRespuestas)}</p>`; out.focus(); return; }
+    quizMostrado = true;
+    if (!Object.keys(a).length) { out.innerHTML = `<p class="empty">${esc(T.cuestionarioSinRespuestas)}</p>`; if (enfocar) out.focus(); return; }
     const lab = (k, v) => T.preguntas[k].opciones[v];
     const R = T.razones, res = [];
     for (const f of FICHAS) {
       const c = f.criterios || {}, why = []; let fuera = false;
       if (a.isla && !f.islas.includes(a.isla)) continue;
+      if (c.multa && a.multa !== "si") continue; // las fichas de multas solo aparecen si la persona dice que tiene una
+      if (c.multa) why.push(R.multa);
       if (c.edadMax != null && a.edad) { const [mn, mx] = EDAD[a.edad]; if (mn > c.edadMax) fuera = true; else if (mx <= c.edadMax) why.push(fmt(R.edad, { max: c.edadMax })); }
       if (c.vivienda && a.vivienda) { if (c.vivienda.includes(a.vivienda)) why.push(fmt(R.vivienda, { valor: lab("vivienda", a.vivienda).toLowerCase() })); else fuera = true; }
       if (c.empleo && a.empleo) { if (c.empleo.includes(a.empleo)) why.push(fmt(R.empleo, { valor: lab("empleo", a.empleo).toLowerCase() })); else fuera = true; }
       if (c.nacionalidad && a.nacionalidad) { if (c.nacionalidad.includes(a.nacionalidad)) why.push(R.nacionalidad); else fuera = true; }
-      if (c.vehiculo && a.vehiculo) { if (a.vehiculo === "si") why.push(R.vehiculo); else fuera = true; }
+      if (c.vehiculo && a.vehiculo) { if (a.vehiculo === "si") why.push(R.vehiculo); else if (!c.multa) fuera = true; }
       if (c.ingresosBajos && a.ingresos) { if (a.ingresos === "si") why.push(R.ingresos); else fuera = true; }
       if (c.general) why.push(R.general);
       const fuertes = why.length; // la residencia y la isla solo matizan: no bastan por sí solas
@@ -406,15 +452,19 @@ footer p { margin: .3rem 0; max-width: 65ch; }
       if (a.isla && f.islas.length === 1) why.push(fmt(R.isla, { isla: a.isla }));
       (c.avisos || []).forEach(v => { if (v === "discapacidad" && a.discapacidad === "si") why.push(R.discapacidad); if (v === "familia" && a.familia === "hijos") why.push(R.familia); });
       if (f.est === "cerrada") why.push(R.cerrada);
-      res.push({ f, why, peso: why.length - (c.general ? 1 : 0) });
+      res.push({ f, why, peso: why.length - (c.general ? 1 : 0) + (c.multa ? 2 : 0) });
     }
     res.sort((x, y) => ORDEN[x.f.est] - ORDEN[y.f.est] || y.peso - x.peso);
     out.innerHTML = `<h2>${esc(T.cuestionarioResultados)}</h2><p class="count">${res.length === 1 ? T.resultadosUno : fmt(T.resultadosVarios, { n: res.length })}</p>` +
       (res.length ? `<ul class="list">${res.map(r => tarjeta(r.f, r.why)).join("")}</ul>` : `<p class="empty">${esc(T.cuestionarioSinResultados)}</p>`);
-    out.focus();
+    if (enfocar) out.focus();
+  }
+  function eventosCuestionario() {
+    $("#quiz").addEventListener("submit", e => { e.preventDefault(); evaluar(); });
+    $("#quiz").addEventListener("reset", () => setTimeout(() => { $("#qres").innerHTML = ""; quizMostrado = false; }, 0));
   }
 
-  // ---------- Pestañas (con #buscar y #cuestionario en la dirección) ----------
+  // ---------- Pestañas (#buscar y #cuestionario en la dirección) ----------
   function mostrar(cual) {
     const q = cual === "cuestionario";
     $("#tab-buscar").setAttribute("aria-selected", String(!q));
@@ -428,8 +478,22 @@ footer p { margin: .3rem 0; max-width: 65ch; }
     window.addEventListener("hashchange", go); go();
   }
 
-  cargar().then(() => { textos(); montarFiltros(); montarCuestionario(); rutas(); buscar(); })
-    .catch(() => { $("#list").innerHTML = `<li class="empty">No se han podido cargar los datos. Si has abierto index.html directamente, ábrelo con un servidor local (lee el README).</li>`; });
+  // ---------- Idioma ----------
+  function pintar() { textos(); rellenarFiltros(); montarCuestionario(); buscar(); if (quizMostrado) evaluar(false); }
+  async function cambiarIdioma(lang) {
+    if (!IDIOMAS.includes(lang) || lang === LANG && T.idioma) return;
+    try { await cargar(lang); guardar("ayudas-idioma", lang); pintar(); } catch (e) { /* si falla, se queda el idioma actual */ }
+  }
+  function idiomaInicial() {
+    const g = leer("ayudas-idioma"); if (IDIOMAS.includes(g)) return g;
+    const n = (navigator.language || "es").slice(0, 2).toLowerCase();
+    return IDIOMAS.includes(n) ? n : "es";
+  }
+
+  const inicial = idiomaInicial();
+  cargar(inicial).catch(() => cargar("es"))
+    .then(() => { pintar(); eventosFiltros(); eventosCuestionario(); rutas(); document.querySelectorAll("#langs button").forEach(b => b.addEventListener("click", () => cambiarIdioma(b.dataset.lang))); })
+    .catch(() => { $("#list").innerHTML = `<li class="empty">No se han podido cargar los datos. Si has abierto index.html directamente, ábrelo con un servidor local (lee el README). · The data could not be loaded. · Die Daten konnten nicht geladen werden.</li>`; });
 })();
 </script>
 </body>

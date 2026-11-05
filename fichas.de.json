@@ -1,0 +1,339 @@
+{
+  "bono-alquiler-joven-2026-2027": {
+    "nombre": "Mietbonus für junge Menschen 2026-2027 (Bono Alquiler Joven)",
+    "organismo": "Balearenregierung · Ministerium für Wohnen, Raumordnung und Mobilität",
+    "interesaA": ["Junge Menschen bis 35 Jahre", "Personen, die eine Wohnung oder ein Zimmer mieten"],
+    "resumen": "Monatliche Hilfe für Menschen bis 35 Jahre, die auf den Balearen eine Wohnung oder ein Zimmer mieten. Sie deckt einen Teil der Miete für 2026 und 2027, bis zu 24 Monate.",
+    "requisitos": [
+      "Bei Antragstellung höchstens 35 Jahre alt sein.",
+      "Spanische, EU-, EWR- oder Schweizer Staatsangehörigkeit; sonst rechtmäßiger Aufenthalt in Spanien.",
+      "Inhaber eines Miet- oder Nutzungsvertrags sein. Untermiete wird nicht akzeptiert.",
+      "Höchstmiete: 900 € im Monat für eine Wohnung oder 450 € im Monat für ein Zimmer.",
+      "Einkommen höchstens das Dreifache des IPREM (laut E-Verwaltung 25.200 €). Bei einer Wohnung zählen alle Bewohner.",
+      "Regelmäßige Einkommensquelle: mindestens 3 Monate in den 6 Monaten vor dem Antrag oder voraussichtlich 6 Monate.",
+      "Mit der Miete nicht im Rückstand sein.",
+      "Es muss der Hauptwohnsitz sein, nachgewiesen durch eine Meldebescheinigung (empadronamiento).",
+      "Kein Verwandtschaftsverhältnis ersten oder zweiten Grades mit dem Vermieter und keine Beteiligung an ihm."
+    ],
+    "importe": "Bis zu 250 € pro Person und Monat, höchstens 24 Monate.",
+    "notas": "Wer schon beantragt hat, reicht die Mietbelege in drei Zeiträumen ein: 4. Jan.–1. Feb. 2027, 15. Juni–15. Juli 2027 und 3. Jan.–3. Feb. 2028.",
+    "pendientes": ["Die 250 € pro Monat stehen auf der Infoseite des Bono; die Seite der E-Verwaltung nennt den Betrag nicht."],
+    "extras": ["Website des Mietbonus"]
+  },
+  "ayudas-alquiler-govern": {
+    "nombre": "Mietzuschüsse (allgemeine Ausschreibung)",
+    "organismo": "Balearenregierung · Ministerium für Wohnen, Raumordnung und Mobilität",
+    "interesaA": ["Mieter mit begrenztem Einkommen"],
+    "resumen": "Zuschuss zur Miete der Hauptwohnung für Haushalte mit begrenztem Einkommen. Er wird jährlich ausgeschrieben. Die letzte veröffentlichte Ausschreibung betrifft die Zuschüsse 2025 und nimmt keine Anträge mehr an.",
+    "notas": "Voraussetzungen und Beträge ändern sich mit jeder Ausschreibung. Die neue erscheint im BOIB (Amtsblatt).",
+    "pendientes": [
+      "Die Ausschreibung 2026 haben wir in offiziellen Quellen nicht gefunden. Laut Presse (2. Nov. 2026) soll sie im ersten Quartal 2027 öffnen, offiziell nicht bestätigt.",
+      "Voraussetzungen und Betrag: siehe offizielle Ausschreibung, sobald sie erscheint."
+    ],
+    "enlaceTexto": "BOIB-Beschluss zu den Mietzuschüssen 2025",
+    "extras": ["Amtsblatt der Balearen (BOIB)"]
+  },
+  "ayuda-compra-vivienda-10000": {
+    "nombre": "10.000 € Zuschuss zum Wohnungskauf (bis 40 Jahre)",
+    "organismo": "Balearenregierung · Generaldirektion für Wohnen und Architektur",
+    "interesaA": ["Personen bis 40 Jahre, die ihren Hauptwohnsitz kaufen"],
+    "resumen": "Direkter Zuschuss von 10.000 € pro Wohnung für Personen bis 40 Jahre, die auf den Balearen ab dem 1. Januar 2026 ihren Hauptwohnsitz kaufen, fertig gebaut oder im Bau.",
+    "requisitos": [
+      "Bei Antragstellung höchstens 40 Jahre alt sein.",
+      "Vor Unterzeichnung des Kaufs mindestens 5 Jahre ununterbrochen auf den Balearen gewohnt haben.",
+      "Mindestens 5 Jahre in der Wohnung als Hauptwohnsitz leben (mit begründeten Ausnahmen).",
+      "Einkommen höchstens das 6,5-Fache des IPREM, erhöht je nach Familiensituation oder Behinderung.",
+      "Kauf ab dem 1. Januar 2026 abgeschlossen oder laufend.",
+      "Spanische, EU-, EWR- oder Schweizer Staatsangehörigkeit oder rechtmäßiger Wohnsitz in Spanien.",
+      "Keine andere Wohnung in Spanien besitzen, mit den in der Ausschreibung genannten Ausnahmen.",
+      "Höchstpreis der Wohnung: 382.000 €, ohne Steuern und Nebenkosten."
+    ],
+    "importe": "10.000 € pro Wohnung. Bei zwei Eigentümern wird er nach Eigentumsanteil aufgeteilt.",
+    "notas": "Mit anderen öffentlichen oder privaten Hilfen kombinierbar, solange die Summe die Kosten der Wohnung nicht übersteigt.",
+    "pendientes": ["Laut Presse werden Anträge nach Eingang bearbeitet und die Frist kann früher enden, wenn das Budget (6 Mio. €) aufgebraucht ist. Prüfe die offizielle Ausschreibung."],
+    "extras": ["Verfahren in der E-Verwaltung", "Terminvergabe der Regierung"]
+  },
+  "nova-hipoteca-jove": {
+    "nombre": "Nova Hipoteca Jove (Bürgschaft des IBAVI für die Hypothek)",
+    "organismo": "Balearisches Wohnungsinstitut (IBAVI)",
+    "interesaA": ["Käufer ohne angespartes Eigenkapital", "Unter 40-Jährige, kinderreiche und Alleinerziehenden-Familien, Menschen mit Behinderung"],
+    "resumen": "Das IBAVI bürgt gegenüber der Bank für einen Teil des Kaufpreises, damit die Hypothek den gesamten Kauf abdecken kann. Du bekommst kein Geld ausgezahlt: Es ist eine öffentliche Bürgschaft. Beantragt wird sie über eine teilnehmende Bank.",
+    "requisitos": [
+      "Spanische oder EU-Staatsangehörigkeit oder rechtmäßiger Wohnsitz in Spanien.",
+      "Mindestens 5 Jahre Wohnsitz auf den Balearen, durchgehend oder nicht.",
+      "Jahreseinkommen bis zum 6,5-Fachen des IPREM: 60.666,65 € für eine Person, 68.250 € für zwei oder mehr.",
+      "Keine andere Wohnung in Spanien als Eigentümer oder Nießbraucher (mit Ausnahmen).",
+      "Wohnung auf den Balearen, als Hauptwohnsitz während der Laufzeit der Bürgschaft.",
+      "Höchstpreis 382.744,84 €, ohne Nebenkosten und Steuern.",
+      "Die teilnehmende Bank muss mindestens 80 % des Werts finanzieren."
+    ],
+    "importe": "Bürgschaft bis 20 % des Wohnungswerts für unter 40-Jährige, kinderreiche und Alleinerziehenden-Familien sowie Menschen mit Behinderung; sonst bis 15 %. Bearbeitungsgebühr: 0,50 % des verbürgten Betrags.",
+    "notas": "Das Programm endet am 1. Februar 2028 oder früher, wenn das Budget aufgebraucht ist. Die Bürgschaft setzt voraus, dass die Bank das Darlehen gewährt.",
+    "extras": ["Antragsfrist", "Ablauf"]
+  },
+  "registro-demandantes-vivienda-protegida": {
+    "nombre": "Anmeldung für geförderten Wohnraum (Sozialwohnung)",
+    "organismo": "Balearenregierung · IBAVI",
+    "interesaA": ["Personen, die eine Sozialwohnung zur Miete oder zum Kauf suchen"],
+    "resumen": "Wer sich für eine neu gebaute geförderte Wohnung bewerben will, vom IBAVI oder von privaten Bauträgern, zum Kauf oder zur Miete, muss sich zuerst in diesem Register eintragen. Danach nimmt man an den einzelnen Vergabeverfahren teil.",
+    "requisitos": [
+      "Wohnsitz auf den Balearen.",
+      "Keine eigene Wohnung, mit den Ausnahmen der Vergabekriterien des IBAVI.",
+      "Die Eintragung gilt 2 Jahre und muss vor Ablauf erneuert werden.",
+      "Du kannst bis zu 3 Gemeinden angeben, in denen du wohnen würdest.",
+      "Die Wartezeit auf der Liste bringt keinen Vorrang."
+    ],
+    "pendientes": ["Einkommensgrenzen und genaue Unterlagen: siehe offizielle Seite."],
+    "extras": ["Häufige Fragen zum Wohnen", "Seite der Regierung zu öffentlichem Wohnraum"]
+  },
+  "itp-primera-vivienda": {
+    "nombre": "Ermäßigung der Grunderwerbsteuer (ITP) für die erste Wohnung",
+    "organismo": "Balearenregierung · Balearische Steuerbehörde (ATIB)",
+    "interesaA": ["Unter 30-Jährige und Menschen mit Behinderung beim Kauf der ersten Wohnung", "Weitere Gruppen mit ermäßigten Sätzen"],
+    "resumen": "Beim Kauf einer gebrauchten Wohnung fällt die Grunderwerbsteuer (ITP) an. Die Balearen gewähren eine Steuervergünstigung für die erste Hauptwohnung von unter 30-Jährigen und Menschen mit Behinderung sowie ermäßigte Sätze in anderen Fällen. Sie wird bei der Steuererklärung angewendet.",
+    "pendientes": [
+      "Höchstpreis, Einkommensgrenzen, Wohnsitzjahre und Mindesthypothek: inoffizielle Quellen nennen unterschiedliche Zahlen, einige haben sich 2026 geändert. Bei der ATIB bestätigen lassen.",
+      "Ermäßigte Sätze für unter 36-Jährige und kinderreiche oder Alleinerziehenden-Familien: bei der ATIB zu bestätigen."
+    ],
+    "enlaceTexto": "Offizielle Auskunft des Steuerrats zu dieser Vergünstigung"
+  },
+  "nie-tie-certificado-ue": {
+    "nombre": "NIE, TIE und EU-Registrierungsbescheinigung: Termin",
+    "organismo": "Ausländerbehörde (Regierungsdelegation) und Nationalpolizei",
+    "interesaA": ["Ausländer, die auf den Balearen leben oder hinziehen"],
+    "resumen": "Für die NIE, die Fingerabdrücke für die TIE-Karte oder die Registrierungsbescheinigung für EU-Bürger brauchst du einen Termin im offiziellen Buchungssystem der Ausländerbehörde. Wähle die Provinz «Illes Balears» und dann das Verfahren.",
+    "requisitos": [
+      "Buche nur auf der offiziellen Website: Termine sind kostenlos.",
+      "Wähle die Provinz «Illes Balears» und das passende Verfahren.",
+      "Bring die für dein Verfahren verlangten Unterlagen mit."
+    ],
+    "pendientes": ["Unterlagen und Gebühr je Verfahren: siehe offizielle Informationen zum gewählten Verfahren."],
+    "extras": ["Stand eines Ausländerverfahrens abfragen"]
+  },
+  "dni-pasaporte": {
+    "nombre": "Spanischen Personalausweis (DNI) oder Reisepass erneuern oder beantragen",
+    "organismo": "Nationalpolizei",
+    "interesaA": ["Spanische Staatsangehörige"],
+    "resumen": "Für DNI oder Reisepass brauchst du einen Termin und musst persönlich zu einer Dienststelle der Nationalpolizei. Termine gibt es auf der offiziellen Website oder unter 060.",
+    "requisitos": [
+      "Buche auf der offiziellen Website. Manche Vermittlungsseiten verlangen Geld für dasselbe.",
+      "Geh am Termin persönlich zur Dienststelle."
+    ],
+    "pendientes": ["Gebühr und Unterlagen (Foto, Meldebescheinigung bei Umzug): siehe offizielles DNI-Portal."],
+    "extras": ["Offizielles DNI-Portal"]
+  },
+  "renovar-permiso-conducir": {
+    "nombre": "Spanischen Führerschein verlängern",
+    "organismo": "Generaldirektion für Verkehr (DGT)",
+    "interesaA": ["Personen, deren Führerschein bald abläuft"],
+    "resumen": "Am einfachsten geht es in einem zugelassenen ärztlichen Prüfzentrum für Fahrer (Centro de Reconocimiento de Conductores): Dort wird das ärztliche Gutachten erstellt und die Verlängerung bei der DGT beantragt. Du kannst auch bei der DGT verlängern, persönlich oder online, mit diesem Gutachten. Wer früher verlängert, verliert keine Gültigkeitstage.",
+    "requisitos": [
+      "Ärztliches Tauglichkeitsgutachten eines zugelassenen Prüfzentrums.",
+      "Offizielles Antragsformular (bei Verlängerung über die DGT).",
+      "Zahlung der Gebühr."
+    ],
+    "pendientes": [
+      "Höhe der Gebühr und Befreiung ab 70: von der Presse genannt, aber nicht bei der DGT geprüft.",
+      "Wie früh man verlängern kann (laut Presse 3 Monate): zu bestätigen."
+    ]
+  },
+  "itv-mallorca": {
+    "nombre": "Fahrzeugprüfung (ITV) auf Mallorca: Termin",
+    "organismo": "Consell de Mallorca · ITV-Dienst",
+    "interesaA": ["Personen mit Auto, Motorrad oder anderem Fahrzeug auf Mallorca"],
+    "resumen": "Für die regelmäßige Prüfung ist ein Termin Pflicht, auf itv.mallorca.es oder telefonisch. Auf dieser Website kannst du den Termin auch an eine andere Station verlegen. Stationen gibt es in Palma, Can Pastilla, Inca, Manacor und Calvià.",
+    "requisitos": [
+      "Termin für die regelmäßige Prüfung erforderlich.",
+      "Telefon für Termine: 871 57 55 44.",
+      "Außerordentliche Prüfungen (zum Beispiel nach Umbauten) laufen direkt über den ITV-Dienst des Consell, ohne Terminsystem."
+    ],
+    "pendientes": ["Preise: siehe Website des Consell de Mallorca."],
+    "extras": ["Termine auf itv.mallorca.es"]
+  },
+  "itv-menorca": {
+    "nombre": "Fahrzeugprüfung (ITV) auf Menorca: Termin",
+    "organismo": "Consell Insular de Menorca (betrieben vom Konzessionär TÜV Rheinland Certio)",
+    "interesaA": ["Personen mit Fahrzeug auf Menorca"],
+    "resumen": "Die ITV auf Menorca hat Stationen in Maó und Ciutadella und wird von einem Unternehmen im Auftrag des Inselrats betrieben. Für den Termin brauchst du nur das Kennzeichen.",
+    "requisitos": [
+      "Station Maó: c. de Bajolí, 40 (POIMA). Telefon 971 354 502.",
+      "Für den Termin brauchst du nur das Kennzeichen. Der Termin ist kostenlos."
+    ],
+    "pendientes": [
+      "Laut Presse (September 2026) funktioniert die Terminvergabe per Web, Telefon und vor Ort nach monatelangen Einschränkungen wieder. Frag beim Consell nach, wie es aktuell geht.",
+      "Telefon in Ciutadella und Preise: zu bestätigen."
+    ]
+  },
+  "itv-eivissa": {
+    "nombre": "Fahrzeugprüfung (ITV) auf Ibiza: Termin",
+    "organismo": "Consell d'Eivissa · ITV-Dienst",
+    "interesaA": ["Personen mit Fahrzeug auf Ibiza"],
+    "resumen": "Den Termin für die regelmäßige Prüfung buchst du auf der ITV-Website des Consell oder telefonisch. Es gibt eine feste Station in Santa Gertrudis und eine mobile ITV auf dem Messegelände von Ibiza.",
+    "requisitos": [
+      "Termin online (itv.conselldeivissa.es) oder unter 971 19 59 06.",
+      "Station Santa Gertrudis: Ctra. Sant Miquel, km 2,7.",
+      "Nachprüfung nach negativem Ergebnis: in derselben Station, ohne Termin.",
+      "Typgenehmigungen, Zweitschriften des Fahrzeugdatenblatts oder Prüfung vor der Zulassung: Termin per E-Mail an itv_eivissa@conselldeivissa.es."
+    ],
+    "importe": "Pkw und leichte Fahrzeuge: 32,18 €. Motorräder und Mopeds: 16,18 €. Inklusive Verkehrsgebühr von 4,18 €.",
+    "extras": ["ITV-Terminseite", "ITV-Preise"]
+  },
+  "itv-formentera": {
+    "nombre": "Fahrzeugprüfung (ITV) auf Formentera: Termin",
+    "organismo": "Consell Insular de Formentera · Ressort Mobilität",
+    "interesaA": ["Personen mit Fahrzeug auf Formentera"],
+    "resumen": "Seit April 2026 werden ITV-Termine auf Formentera über eine Website des Consell gebucht, die den ersten freien Termin und weitere Tage und Uhrzeiten zeigt.",
+    "requisitos": ["Buche den Termin auf der ITV-Website des Consell de Formentera."],
+    "pendientes": ["Adresse der Website von der Lokalpresse bestätigt; Telefon und Preise beim Consell zu bestätigen."],
+    "extras": ["Website des Consell de Formentera"]
+  },
+  "empadronamiento": {
+    "nombre": "Beim Rathaus anmelden (empadronamiento)",
+    "organismo": "Dein Rathaus",
+    "interesaA": ["Alle, die in einer Gemeinde der Balearen wohnen"],
+    "resumen": "Das Melderegister (padrón) belegt, wo du wohnst. Die Anmeldung erfolgt im Rathaus deines Wohnorts. Viele Einträge dieser Website setzen sie voraus: Residentenrabatt, Targeta Única, Mietbonus für junge Menschen oder Zuschuss zum Wohnungskauf.",
+    "requisitos": [
+      "Jedes Rathaus erklärt, wie die Anmeldung läuft und welche Unterlagen nötig sind.",
+      "Beispiel Palma: Anmeldungen und Adressänderungen persönlich in den Bürgerbüros (OAC) mit Termin. Personen über 65 können ohne Termin zur OAC Son Moix."
+    ],
+    "pendientes": [
+      "Das Infoblatt von Palma stammt von März 2023; prüfe, ob es noch gilt.",
+      "Andere Gemeinden: siehe Website deines Rathauses."
+    ],
+    "enlaceTexto": "Infoblatt des Rathauses Palma (Anmeldung und Adressänderung)"
+  },
+  "descuento-residente": {
+    "nombre": "Residentenrabatt für Flüge und Fähren",
+    "organismo": "Spanischer Staat (Informationen des Luftverkehrsdienstes der Balearenregierung)",
+    "interesaA": ["Einwohner der Balearen, die zwischen den Inseln oder aufs Festland reisen"],
+    "resumen": "Einwohner der Balearen erhalten Rabatt auf Linienflüge zwischen den Inseln und ins übrige Spanien. Die Fluggesellschaft prüft den Wohnsitz meist automatisch; klappt das nicht, kann die Meldebescheinigung verlangt werden.",
+    "requisitos": [
+      "In einer Gemeinde der Balearen gemeldet (empadronado) sein.",
+      "Spanische, EU-, EWR- oder Schweizer Staatsangehörigkeit; Familienangehöriger mit Aufenthaltsrecht; oder Nicht-EU-Bürger mit Daueraufenthalt.",
+      "Ausweis mit DNI, NIE oder Reisepass."
+    ],
+    "importe": "75 % Rabatt auf Linienflugtarife.",
+    "pendientes": ["Die offizielle Seite nennt auch Fähren, gibt den Prozentsatz aber nur für Flüge an. Frag bei der Reederei nach."]
+  },
+  "tarjeta-sanitaria": {
+    "nombre": "Gesundheitskarte des IB-Salut",
+    "organismo": "Balearischer Gesundheitsdienst (IB-Salut)",
+    "interesaA": ["Personen mit Anspruch auf öffentliche Gesundheitsversorgung, die auf den Balearen wohnen"],
+    "resumen": "Die persönliche Gesundheitskarte gibt Zugang zur öffentlichen Gesundheitsversorgung auf den Balearen. Mit demselben Verfahren beantragst du sie zum ersten Mal, verlängerst sie, bekommst ein Duplikat oder änderst deine Daten.",
+    "requisitos": [
+      "Anerkannter Anspruch auf öffentliche Gesundheitsversorgung.",
+      "Aktuelles Farbfoto, 26 × 32 mm.",
+      "Meldebescheinigung (nur in einigen Gemeinden).",
+      "Offizielles Antragsformular.",
+      "Antrag online (digitales Zertifikat, elektronischer DNI oder Cl@ve permanente) oder persönlich in einer Registerstelle."
+    ]
+  },
+  "targeta-unica-transporte": {
+    "nombre": "Targeta Única: Karte für den Nahverkehr auf Mallorca",
+    "organismo": "Balearenregierung (TIB) und Rathaus Palma (EMT)",
+    "interesaA": ["Einwohner der Balearen, die auf Mallorca öffentliche Verkehrsmittel nutzen"],
+    "resumen": "Eine Karte für Zug, Metro, TIB-Überlandbusse und die EMT-Stadtbusse in Palma. Die Regierung hat beschlossen, dass Überlandbusse, Zug und Metro auf Mallorca 2026 kostenlos bleiben. Seit März 2026 können auch Einwohner von Menorca, Ibiza und Formentera die Karte beantragen.",
+    "requisitos": [
+      "Wohnsitz auf den Balearen.",
+      "Wer schon die Targeta Intermodal hat, kann sie weiter nutzen und braucht die neue Karte nicht.",
+      "Antrag online auf der TIB-Website oder persönlich mit Termin (ein Termin pro Karte).",
+      "Büros auf Mallorca: TIB in der Estació Intermodal, Alcúdia, Inca und Manacor; EMT Palma; Gemeindebüros in Calvià, Llucmajor und Marratxí.",
+      "Menorca: Bürgerbüros in Maó und Ciutadella, mit Termin. Ibiza: Bürgerservice des Consell, mit Termin. Formentera: Büros des Consell in Sant Francesc und Sant Ferran."
+    ],
+    "pendientes": ["Genaue Bedingungen für die kostenlose Fahrt (zum Beispiel Mindestguthaben) und ob die EMT-Stadtbusse dazugehören: bei TIB und EMT zu bestätigen."],
+    "extras": ["Häufige Fragen der Regierung", "Verfahren in der E-Verwaltung", "Kostenloser Nahverkehr 2026 (TIB)"]
+  },
+  "inscripcion-soib": {
+    "nombre": "Arbeitslos melden: Registrierung als Arbeitssuchender (SOIB)",
+    "organismo": "Balearischer Arbeitsdienst (SOIB)",
+    "interesaA": ["Arbeitslose und Menschen, die eine andere Stelle suchen"],
+    "resumen": "Die Anmeldung beim SOIB ist kostenlos und gibt Zugang zu Stellenangeboten, Weiterbildung und Beratung. Wer Arbeitslosengeld bezieht, muss sich anmelden. Beim ersten Mal musst du persönlich in ein SOIB-Büro.",
+    "requisitos": [
+      "Erste Anmeldung: persönlich in einem SOIB-Büro.",
+      "Pflicht für Bezieher von Arbeitslosengeld.",
+      "Keine Frist: Anmeldung jederzeit möglich."
+    ]
+  },
+  "renta-social-garantizada": {
+    "nombre": "Garantiertes Sozialeinkommen (RESOGA)",
+    "organismo": "Balearenregierung · Ministerium für Familien, Sozialwesen und Pflege",
+    "interesaA": ["Haushalte in wirtschaftlicher Notlage"],
+    "resumen": "Regelmäßige Leistung für Haushalte ohne ausreichendes Einkommen, die kein staatliches Mindesteinkommen beziehen. Vorher muss das staatliche Mindesteinkommen beantragt werden.",
+    "requisitos": [
+      "Wirtschaftliche Notlage.",
+      "Vorher das staatliche Mindesteinkommen beantragt haben oder erklären, dass die Voraussetzungen dafür nicht erfüllt sind.",
+      "Andere zustehende Leistungen oder Renten beantragt haben.",
+      "Bei Antragstellung in einer Gemeinde der Balearen gemeldet sein.",
+      "Mindestens 3 Jahre ununterbrochener rechtmäßiger Wohnsitz auf den Balearen, mit Ausnahmen.",
+      "Wer weder arbeitet noch studiert, muss beim SOIB gemeldet sein.",
+      "Der Haushalt muss seit mindestens 6 Monaten bestehen (außer bei Alleinlebenden)."
+    ],
+    "pendientes": [
+      "Die RESOGA-Website nennt 3 Jahre Wohnsitz, die Seite der E-Verwaltung 12 Monate. Vor dem Antrag klären.",
+      "Betrag: siehe offizielle Seite."
+    ],
+    "extras": ["Verfahren in der E-Verwaltung"]
+  },
+  "ingreso-minimo-vital": {
+    "nombre": "Staatliches Mindesteinkommen (Ingreso Mínimo Vital)",
+    "organismo": "Sozialversicherung (Nationales Institut der Sozialversicherung)",
+    "interesaA": ["Haushalte mit sehr geringem Einkommen"],
+    "resumen": "Staatliche Leistung für Haushalte mit sehr geringem Einkommen. Auf den Balearen ist sie der erste Schritt: Sie muss vor dem Garantierten Sozialeinkommen beantragt werden.",
+    "pendientes": ["Voraussetzungen, Beträge und Antragsweg: nicht auf der offiziellen Website geprüft. Frag bei der Sozialversicherung nach."],
+    "extras": ["E-Verwaltung der Sozialversicherung"]
+  },
+  "multas-dgt": {
+    "nombre": "Bußgeld der DGT (Verkehr) bezahlen",
+    "organismo": "Generaldirektion für Verkehr (DGT)",
+    "interesaA": ["Personen mit einem Verkehrsbußgeld der DGT, zum Beispiel von der Guardia Civil auf der Landstraße"],
+    "resumen": "Wer innerhalb von 20 Kalendertagen nach der Zustellung zahlt, bekommt 50 % Nachlass. Zahlen kannst du online, in der App miDGT, unter 060, bei CaixaBank oder bei der Post. Prüfe zuerst, wer das Bußgeld verhängt hat: Bußgelder der Gemeinde werden dort bezahlt, nicht bei der DGT.",
+    "requisitos": [
+      "50 % Nachlass bei Zahlung innerhalb von 20 Kalendertagen nach Zustellung. Wer mit Nachlass zahlt, verzichtet auf Einspruch.",
+      "Danach zahlst du 100 %. Ohne Zahlung treibt die Steuerbehörde den Betrag mit 20 % Zuschlag ein.",
+      "Keine Stundung und keine Ratenzahlung.",
+      "Für die Online-Zahlung brauchst du Aktenzeichen und Zustelldatum. Karte und Bizum möglich.",
+      "Telefon 060 (aus dem Ausland: +34 902 887 060), Kartenzahlung, rund um die Uhr.",
+      "Vor Ort: Filialen und Geldautomaten von CaixaBank (Karte oder bar) oder Postämter (nur bar, mit Postgebühr).",
+      "Wenn du nicht gefahren bist, nenne auf Aufforderung innerhalb von 10 Tagen den Fahrer; sonst ist das ein sehr schwerer Verstoß.",
+      "Die DGT verschickt Bußgelder nie per E-Mail: Vorsicht bei solchen Nachrichten."
+    ],
+    "importe": "50 % Nachlass bei Zahlung innerhalb von 20 Kalendertagen (nicht bei allen Verstößen). Die Zahlung ist kostenlos, außer der Postgebühr.",
+    "extras": ["Was tun bei einem Bußgeldbescheid (DGT)"]
+  },
+  "multas-palma": {
+    "nombre": "Verkehrs- oder ORA-Parkbußgeld in Palma bezahlen",
+    "organismo": "Rathaus Palma (Mobilität und Gemeindekasse)",
+    "interesaA": ["Personen mit einem Verkehrs- oder Parkbußgeld (ORA) in Palma"],
+    "resumen": "Verkehrs- und ORA-Bußgelder des Rathauses Palma werden an die Stadt gezahlt, nicht an die DGT. Zahlen kannst du online in der E-Verwaltung, in der Gemeindekasse oder bei mehreren Banken. Bei Zahlung gibt es 50 % Nachlass, der bei einem Einspruch entfällt.",
+    "requisitos": [
+      "Online: in der E-Verwaltung von Palma, mit der Referenz des Strafzettels, dem Bescheid oder dem C60-Code.",
+      "Vor Ort: Recaptació Municipal, Plaça de Santa Eulàlia, 9, 1. Stock.",
+      "Banken: CaixaBank, BBVA, Banca March, Santander und Caixa Colonya.",
+      "50 % Nachlass; entfällt bei Einspruch oder Widerspruch.",
+      "Bußgelder abfragen unter mulcars.palma.cat. Fahrer benennen unter identificacioconductor.palma.cat.",
+      "Es gibt einen Kurs, mit dem bestimmte Bußgelder erlassen werden («Respectant hi guanya tothom»): einmal alle 3 Jahre und nur für die erfassten Verstöße.",
+      "Fragen: Mobilität, Telefon 971 22 55 22."
+    ],
+    "importe": "50 % Nachlass bei Zahlung ohne Einspruch.",
+    "pendientes": ["Genaue Frist für den 50-%-Nachlass: Die Seite von Palma nennt sie nicht. Siehe deinen Bescheid."],
+    "enlaceTexto": "Informationen des Rathauses Palma zu Bußgeldern",
+    "extras": ["Online bezahlen (E-Verwaltung Palma)", "Einspruch und Widerspruch (Multes.04)"]
+  },
+  "multas-ayuntamientos-atib": {
+    "nombre": "Bußgelder anderer Gemeinden und der Regierung: wo zahlen",
+    "organismo": "Die Behörde, die das Bußgeld verhängt hat · Balearische Steuerbehörde (ATIB)",
+    "interesaA": ["Personen mit einem Bußgeld einer anderen Gemeinde als Palma, der Regierung oder einer anderen Behörde", "Bußgelder außerhalb des Verkehrs (Gemeindeverordnungen, Verwaltungsstrafen)"],
+    "resumen": "Jedes Bußgeld wird bei der Behörde bezahlt, abgefragt oder angefochten, die es verhängt hat; sie steht auf dem Bescheid. Viele Gemeinden der Balearen lassen die ATIB für sich einziehen: Im Cartero Virtual der ATIB kannst du Bußgelder, Steuern und Schulden abfragen, die die ATIB einzieht.",
+    "requisitos": [
+      "Sieh auf dem Bescheid nach, wer das Bußgeld verhängt hat: DGT, Gemeinde, Regierung oder eine andere Stelle.",
+      "Für den Cartero Virtual der ATIB brauchst du deinen Steuerzahlercode oder ein digitales Zertifikat, den elektronischen DNI oder Cl@ve.",
+      "Wenn die ATIB nicht zuständig ist, folge den Zahlungshinweisen auf dem Bescheid oder frag bei deiner Gemeinde nach."
+    ],
+    "pendientes": [
+      "Welche Gemeinden das Einziehen von Bußgeldern an die ATIB übertragen haben: Die Website nennt keine Liste. Siehe deinen Bescheid.",
+      "Ob man im Cartero Virtual Bußgelder bezahlen oder nur abfragen kann: in den FAQ der ATIB zu bestätigen.",
+      "Nachlässe bei früher Zahlung für Bußgelder außerhalb des Verkehrs hängen von der jeweiligen Vorschrift ab; siehe deinen Bescheid."
+    ],
+    "enlaceTexto": "Cartero Virtual der ATIB"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "idioma": "en",
+  "nombreIdioma": "English",
+  "idiomaEtiqueta": "Language",
+  "titulo": "Ayudas Baleares",
+  "lema": "Public aid, paperwork and fines in the Balearic Islands, explained in plain language, with the official link for each one.",
+  "aviso": "This information is for guidance only. Check the requirements and deadline on the official page.",
+  "avisoDerecho": "This website does not decide whether you are entitled to any aid and does not submit applications for you.",
+  "avisoIdioma": "Official pages and forms are usually in Spanish or Catalan. Official names are kept in Spanish so you can recognise them.",
+  "pestanaBuscar": "Search",
+  "pestanaCuestionario": "What might apply to me",
+  "buscarEtiqueta": "Search by keyword",
+  "buscarPlaceholder": "For example: rent, NIE, ITV, fine…",
+  "filtroIsla": "Island",
+  "filtroMunicipio": "Municipality",
+  "filtroCategoria": "Topic",
+  "filtroEstado": "Deadline",
+  "todas": "All",
+  "todos": "All",
+  "limpiar": "Clear filters",
+  "resultadosUno": "1 result",
+  "resultadosVarios": "{n} results",
+  "sinResultados": "No entries match these filters. Try fewer filters or another word.",
+  "estados": {
+    "abierta": "Open",
+    "proxima": "Opening soon",
+    "cerrada": "Closed",
+    "por-confirmar": "To be confirmed",
+    "permanente": "No deadline"
+  },
+  "tipos": {
+    "ayuda": "Aid",
+    "tramite": "Procedure"
+  },
+  "categorias": {
+    "alquiler": "Renting",
+    "vivienda": "Housing and buying",
+    "documentacion": "Documents",
+    "vehiculo": "Car and driving",
+    "transporte": "Transport",
+    "salud": "Health",
+    "empleo": "Employment",
+    "ingresos": "Minimum income",
+    "multas": "Fines"
+  },
+  "campoOrganismo": "Managed by",
+  "campoDonde": "Where",
+  "campoImporte": "Amount",
+  "campoPlazo": "Deadline",
+  "campoInteresa": "Who it may interest",
+  "campoRequisitos": "Published requirements",
+  "campoNotas": "Good to know",
+  "campoPendientes": "Unconfirmed details",
+  "campoMasEnlaces": "More official links",
+  "consultaOficial": "Check the official notice",
+  "verOficial": "Open official page",
+  "comprobado": "Checked on {fecha}",
+  "codigoSIA": "SIA code {codigo}",
+  "verDetalles": "Show requirements and details",
+  "verificacionParcial": "Some details unconfirmed",
+  "todasIslas": "All islands",
+  "desde": "From {inicio} to {fin}",
+  "cuestionarioIntro": "Answer as much as you like: every question is optional and your answers are not stored. We never ask for your name, ID number, address or bank details.",
+  "cuestionarioBoton": "Show what might apply to me",
+  "cuestionarioReiniciar": "Clear answers",
+  "cuestionarioResultados": "This might interest you",
+  "cuestionarioSinRespuestas": "Answer at least one question to see results.",
+  "cuestionarioSinResultados": "No entries match these answers. Try changing an answer or use the search.",
+  "porQue": "Why it appears",
+  "sinRespuesta": "I'd rather not say",
+  "preguntas": {
+    "edad": {
+      "texto": "How old are you?",
+      "opciones": {
+        "<30": "Under 30",
+        "30-35": "30 to 35",
+        "36-40": "36 to 40",
+        "41-64": "41 to 64",
+        "65+": "65 or over"
+      }
+    },
+    "isla": {
+      "texto": "Which island do you live on?"
+    },
+    "residencia": {
+      "texto": "How long have you lived in the Balearic Islands?",
+      "opciones": {
+        "<1": "Less than 1 year",
+        "1-3": "1 to 3 years",
+        "3-5": "3 to 5 years",
+        "5+": "5 years or more"
+      }
+    },
+    "vivienda": {
+      "texto": "What is your housing situation?",
+      "opciones": {
+        "alquilo-vivienda": "I rent a home",
+        "alquilo-habitacion": "I rent a room",
+        "quiero-comprar": "I want to buy or am buying",
+        "propia": "I live in a home I own",
+        "otra": "Other"
+      }
+    },
+    "empleo": {
+      "texto": "What is your work situation?",
+      "opciones": {
+        "trabaja": "I work",
+        "paro": "I'm unemployed or looking for work",
+        "estudia": "I study",
+        "jubilado": "I'm retired",
+        "otro": "Other"
+      }
+    },
+    "nacionalidad": {
+      "texto": "What is your nationality?",
+      "opciones": {
+        "es": "Spanish",
+        "ue": "Another EU or EEA country, or Switzerland",
+        "otra": "Another country"
+      }
+    },
+    "vehiculo": {
+      "texto": "Do you have a car, motorbike or other vehicle, or a driving licence?",
+      "opciones": {
+        "si": "Yes",
+        "no": "No"
+      }
+    },
+    "multa": {
+      "texto": "Do you have an unpaid fine (traffic or other)?",
+      "opciones": {
+        "si": "Yes",
+        "no": "No"
+      }
+    },
+    "ingresos": {
+      "texto": "Does your household have a low income or struggle to make ends meet?",
+      "opciones": {
+        "si": "Yes",
+        "no": "No"
+      }
+    },
+    "familia": {
+      "texto": "Who do you live with?",
+      "opciones": {
+        "solo": "I live alone",
+        "pareja": "With a partner, no children",
+        "hijos": "With children or dependants",
+        "otros": "I share with other people"
+      }
+    },
+    "discapacidad": {
+      "texto": "Do you or someone in your household have a recognised disability?",
+      "opciones": {
+        "si": "Yes",
+        "no": "No"
+      }
+    }
+  },
+  "razones": {
+    "edad": "Your age fits the published limit ({max} at most).",
+    "vivienda": "It matches your housing situation: {valor}.",
+    "empleo": "It matches your work situation: {valor}.",
+    "nacionalidad": "It is a procedure for people of your nationality.",
+    "vehiculo": "You have a vehicle or a driving licence.",
+    "multa": "You said you have an unpaid fine.",
+    "ingresos": "It is aimed at low-income households.",
+    "residencia": "It requires at least {min} years living in the Balearic Islands, and you said you meet that.",
+    "isla": "It applies in {isla}.",
+    "general": "It is a common procedure for any resident.",
+    "cerrada": "The deadline has passed; we show it in case it opens again.",
+    "discapacidad": "There are specific conditions for people with disabilities; check the requirements.",
+    "familia": "There are specific conditions for large or single-parent families; check the requirements."
+  },
+  "pie": "Information checked on official sources: the Balearic Government, the BOIB, island councils, town halls and the Spanish State. Each entry shows the date it was checked.",
+  "errorCarga": "The data could not be loaded. If you opened the file directly, open it with a local server (see the README).",
+  "nuevaPestana": "opens in a new tab",
+  "secciones": "Sections"
+}
