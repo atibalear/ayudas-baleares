@@ -1,0 +1,109 @@
+{
+  "idioma": "es",
+  "titulo": "Ayudas Baleares",
+  "lema": "Ayudas y trámites de las Illes Balears, explicados sin lenguaje administrativo y con el enlace oficial de cada uno.",
+  "aviso": "Esta información es orientativa. Comprueba los requisitos y el plazo en la página oficial.",
+  "avisoDerecho": "Esta web no decide si tienes derecho a una ayuda ni presenta solicitudes por ti.",
+  "pestanaBuscar": "Buscar",
+  "pestanaCuestionario": "Qué me puede interesar",
+  "buscarEtiqueta": "Buscar por palabras",
+  "buscarPlaceholder": "Por ejemplo: alquiler, NIE, ITV, hipoteca…",
+  "filtroIsla": "Isla",
+  "filtroMunicipio": "Municipio",
+  "filtroCategoria": "Tema",
+  "filtroEstado": "Plazo",
+  "todas": "Todas",
+  "todos": "Todos",
+  "limpiar": "Quitar filtros",
+  "resultadosUno": "1 resultado",
+  "resultadosVarios": "{n} resultados",
+  "sinResultados": "No hay fichas con estos filtros. Prueba con menos filtros u otra palabra.",
+  "estados": {
+    "abierta": "Plazo abierto",
+    "proxima": "Próximamente",
+    "cerrada": "Plazo cerrado",
+    "por-confirmar": "Por confirmar",
+    "permanente": "Sin plazo"
+  },
+  "tipos": { "ayuda": "Ayuda", "tramite": "Trámite" },
+  "campoOrganismo": "Quién lo gestiona",
+  "campoDonde": "Dónde",
+  "campoImporte": "Importe",
+  "campoPlazo": "Plazo",
+  "campoInteresa": "A quién puede interesar",
+  "campoRequisitos": "Requisitos publicados",
+  "campoNotas": "A tener en cuenta",
+  "campoPendientes": "Datos sin confirmar",
+  "campoMasEnlaces": "Más enlaces oficiales",
+  "consultaOficial": "Consulta la convocatoria oficial",
+  "verOficial": "Ver página oficial",
+  "comprobado": "Comprobado el {fecha}",
+  "codigoSIA": "Código SIA {codigo}",
+  "verDetalles": "Ver requisitos y detalles",
+  "verificacionParcial": "Ficha con datos sin confirmar",
+  "todasIslas": "Todas las islas",
+  "desde": "Del {inicio} al {fin}",
+  "cuestionarioIntro": "Responde lo que quieras: todas las preguntas son opcionales y no guardamos tus respuestas. No te pedimos nombre, DNI, dirección ni datos bancarios.",
+  "cuestionarioBoton": "Ver qué me puede interesar",
+  "cuestionarioReiniciar": "Borrar respuestas",
+  "cuestionarioResultados": "Puede interesarte",
+  "cuestionarioSinRespuestas": "Responde al menos una pregunta para ver resultados.",
+  "cuestionarioSinResultados": "Con estas respuestas no encontramos fichas. Prueba a cambiar alguna respuesta o usa el buscador.",
+  "porQue": "Por qué aparece",
+  "sinRespuesta": "Prefiero no responder",
+  "preguntas": {
+    "edad": {
+      "texto": "¿Qué edad tienes?",
+      "opciones": { "<30": "Menos de 30 años", "30-35": "Entre 30 y 35", "36-40": "Entre 36 y 40", "41-64": "Entre 41 y 64", "65+": "65 o más" }
+    },
+    "isla": { "texto": "¿En qué isla vives?" },
+    "residencia": {
+      "texto": "¿Cuánto tiempo llevas viviendo en Baleares?",
+      "opciones": { "<1": "Menos de 1 año", "1-3": "Entre 1 y 3 años", "3-5": "Entre 3 y 5 años", "5+": "5 años o más" }
+    },
+    "vivienda": {
+      "texto": "¿Cuál es tu situación de vivienda?",
+      "opciones": { "alquilo-vivienda": "Alquilo una vivienda", "alquilo-habitacion": "Alquilo una habitación", "quiero-comprar": "Quiero comprar o estoy comprando", "propia": "Vivo en una vivienda propia", "otra": "Otra situación" }
+    },
+    "empleo": {
+      "texto": "¿Cuál es tu situación laboral?",
+      "opciones": { "trabaja": "Trabajo", "paro": "Estoy en paro o busco trabajo", "estudia": "Estudio", "jubilado": "Estoy jubilado o jubilada", "otro": "Otra" }
+    },
+    "nacionalidad": {
+      "texto": "¿Qué nacionalidad tienes?",
+      "opciones": { "es": "Española", "ue": "De otro país de la UE, EEE o Suiza", "otra": "De otro país" }
+    },
+    "vehiculo": {
+      "texto": "¿Tienes coche, moto u otro vehículo, o carné de conducir?",
+      "opciones": { "si": "Sí", "no": "No" }
+    },
+    "ingresos": {
+      "texto": "¿En tu hogar tenéis ingresos bajos o dificultades para llegar a fin de mes?",
+      "opciones": { "si": "Sí", "no": "No" }
+    },
+    "familia": {
+      "texto": "¿Cómo es tu hogar?",
+      "opciones": { "solo": "Vivo solo o sola", "pareja": "En pareja sin hijos", "hijos": "Con hijos o menores a cargo", "otros": "Comparto con otras personas" }
+    },
+    "discapacidad": {
+      "texto": "¿Tú o alguien de tu hogar tiene una discapacidad reconocida?",
+      "opciones": { "si": "Sí", "no": "No" }
+    }
+  },
+  "razones": {
+    "edad": "Tu edad encaja con el límite publicado ({max} años como máximo).",
+    "vivienda": "Encaja con tu situación de vivienda: {valor}.",
+    "empleo": "Encaja con tu situación laboral: {valor}.",
+    "nacionalidad": "Es un trámite para personas con tu nacionalidad.",
+    "vehiculo": "Tienes vehículo o carné de conducir.",
+    "ingresos": "Está pensada para hogares con ingresos bajos.",
+    "residencia": "Pide al menos {min} años de residencia en Baleares y has indicado que los cumples.",
+    "isla": "Se aplica en {isla}.",
+    "general": "Es un trámite habitual para cualquier residente.",
+    "cerrada": "El plazo está cerrado ahora; te la mostramos por si se vuelve a convocar.",
+    "discapacidad": "Hay condiciones específicas para personas con discapacidad; revisa los requisitos.",
+    "familia": "Hay condiciones específicas para familias numerosas o monoparentales; revisa los requisitos."
+  },
+  "pie": "Datos revisados en fuentes oficiales: Govern de les Illes Balears, BOIB, consells insulars, ayuntamientos y Administración del Estado. Cada ficha indica su fecha de comprobación.",
+  "errorCarga": "No se han podido cargar los datos. Si has abierto el archivo directamente, ábrelo con un servidor local (lee el README)."
+}

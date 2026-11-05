@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayudas Baleares</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Ayudas públicas y trámites de las Illes Balears, con enlace oficial y fecha de comprobación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}img{max-width:100%}
+/* Layout: una columna de lectura (máx. 60rem) — cabecera con aviso, pestañas, filtros en rejilla que se apila en móvil, fichas en lista. */
+:root {
+  --bg: #f3f6f5;
+  --surface: #ffffff;
+  --ink: #13252b;
+  --muted: #536469;
+  --line: #d4dedc;
+  --accent: #0b6a62;
+  --accent-soft: #e0efec;
+  --on-accent: #ffffff;
+  --ok: #1b6e3a;   --ok-bg: #e2f2e6;
+  --warn: #8a5600; --warn-bg: #fbf0d9;
+  --off: #5b6266;  --off-bg: #e9ecec;
+  --info: #2c5577; --info-bg: #e3ecf4;
+  --focus: #0b6a62;
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1a1d; --surface: #16242a; --ink: #e6eeec; --muted: #9fb1b3; --line: #2a3c42;
+    --accent: #5cc4b6; --accent-soft: #173a38; --on-accent: #0b1a1b;
+    --ok: #7fd49a; --ok-bg: #173323; --warn: #f0c070; --warn-bg: #3a2c10;
+    --off: #b2babd; --off-bg: #263236; --info: #9cc3e6; --info-bg: #1b2d3d; --focus: #5cc4b6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1a1d; --surface: #16242a; --ink: #e6eeec; --muted: #9fb1b3; --line: #2a3c42;
+  --accent: #5cc4b6; --accent-soft: #173a38; --on-accent: #0b1a1b;
+  --ok: #7fd49a; --ok-bg: #173323; --warn: #f0c070; --warn-bg: #3a2c10;
+  --off: #b2babd; --off-bg: #263236; --info: #9cc3e6; --info-bg: #1b2d3d; --focus: #5cc4b6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.55;
+}
+.wrap {
+  max-width: 60rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+/* Cabecera */
+header.top { padding-block: 2.25rem 1.25rem; }
+.brand { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
+h1 {
+  font-family: var(--f-display); font-weight: 800; font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1; letter-spacing: -0.02em; margin: 0; text-wrap: balance;
+}
+.isles { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.lema { margin: .75rem 0 0; max-width: 40rem; color: var(--muted); font-size: 1.1rem; }
+.aviso {
+  margin-top: 1.25rem; display: flex; gap: .75rem; align-items: flex-start;
+  background: var(--warn-bg); color: var(--ink); border-radius: var(--r);
+  padding: .85rem 1rem; font-size: .98rem;
+}
+.aviso strong { color: var(--warn); }
+.aviso svg { flex: none; margin-top: .15rem; }
+
+/* Pestañas */
+.tabs { display: flex; gap: .35rem; border-bottom: 1px solid var(--line); margin-top: 1.5rem; }
+.tab {
+  font: 700 1rem var(--f-body); color: var(--muted); background: none; border: 0;
+  padding: .7rem .9rem; border-bottom: 3px solid transparent; cursor: pointer; margin-bottom: -1px;
+}
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+
+/* Filtros */
+.panel { padding-block: 1.25rem 3rem; }
+.filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: .9rem; }
+.search { position: relative; }
+label.lbl, legend.lbl { display: block; font-size: .8rem; font-weight: 700; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; margin-bottom: .3rem; }
+input[type="search"], select {
+  width: 100%; font: 400 1rem var(--f-body); color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  padding: .65rem .75rem; min-height: 2.9rem;
+}
+input[type="search"] { font-size: 1.1rem; padding-left: 2.6rem; }
+.search svg { position: absolute; left: .85rem; bottom: .85rem; color: var(--muted); }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.count { font-weight: 700; }
+.linkbtn { background: none; border: 0; color: var(--accent); font: 700 .95rem var(--f-body); cursor: pointer; padding: .3rem 0; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Fichas */
+.list { display: grid; gap: .9rem; margin-top: 1rem; list-style: none; padding: 0; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
+  padding: 1.15rem 1.2rem; display: grid; gap: .65rem; min-width: 0;
+}
+.card.is-cerrada { opacity: .9; }
+.meta { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: .35rem; font-size: .82rem; font-weight: 700; padding: .2rem .6rem; border-radius: 999px; }
+.pill::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.st-abierta { color: var(--ok); background: var(--ok-bg); }
+.st-proxima { color: var(--info); background: var(--info-bg); }
+.st-cerrada { color: var(--off); background: var(--off-bg); }
+.st-por-confirmar { color: var(--warn); background: var(--warn-bg); }
+.st-permanente { color: var(--info); background: var(--info-bg); }
+.tag { font-size: .82rem; color: var(--muted); }
+.tag + .tag::before { content: "·"; margin-right: .45rem; }
+.card h3 { font-family: var(--f-display); font-weight: 600; font-size: 1.3rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+.org { margin: 0; color: var(--muted); font-size: .95rem; }
+.sum { margin: 0; max-width: 65ch; }
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 0; padding: .75rem 0 0; border-top: 1px dashed var(--line); }
+.facts dt { font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.facts dd { margin: .15rem 0 0; font-size: .95rem; }
+.mono { font-family: var(--f-mono); font-size: .88rem; font-variant-numeric: tabular-nums; }
+.pend { color: var(--warn); font-weight: 700; }
+details { border-top: 1px solid var(--line); padding-top: .6rem; }
+summary { cursor: pointer; font-weight: 700; color: var(--accent); list-style-position: outside; }
+.det { display: grid; gap: .9rem; padding-top: .75rem; }
+.det h4 { margin: 0 0 .3rem; font-size: .95rem; }
+.det ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
+.det p { margin: 0; }
+.box-pend { background: var(--warn-bg); border-radius: 8px; padding: .75rem .9rem; }
+.box-pend h4 { color: var(--warn); }
+.foot { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; justify-content: space-between; }
+.btn {
+  display: inline-flex; align-items: center; gap: .45rem; background: var(--accent); color: var(--on-accent);
+  font: 700 1rem var(--f-body); text-decoration: none; padding: .6rem 1rem; border-radius: 8px; border: 0; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+.checked { font-size: .85rem; color: var(--muted); }
+.why { background: var(--accent-soft); border-radius: 8px; padding: .7rem .9rem; }
+.why h4 { margin: 0 0 .3rem; font-size: .9rem; color: var(--accent); }
+.why ul { margin: 0; padding-left: 1.1rem; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--r); padding: 1.5rem; color: var(--muted); }
+
+/* Cuestionario */
+.qintro { max-width: 46rem; color: var(--muted); }
+form.quiz { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.25rem; margin-top: 1rem; }
+fieldset { border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); padding: .9rem 1rem 1rem; margin: 0; min-width: 0; }
+fieldset legend { padding: 0 .3rem; font-weight: 700; font-size: 1rem; text-transform: none; letter-spacing: 0; color: var(--ink); }
+.opts { display: grid; gap: .3rem; }
+.opts label { display: flex; gap: .55rem; align-items: center; padding: .3rem .2rem; cursor: pointer; border-radius: 6px; }
+.opts label:hover { background: var(--accent-soft); }
+.opts input { accent-color: var(--accent); width: 1.1rem; height: 1.1rem; flex: none; }
+.qactions { grid-column: 1 / -1; display: flex; gap: .75rem; flex-wrap: wrap; }
+#qres { margin-top: 2rem; scroll-margin-top: 1rem; }
+#qres h2 { font-family: var(--f-display); font-size: 1.6rem; margin: 0; }
+
+footer { border-top: 1px solid var(--line); padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: .92rem; }
+footer p { margin: .3rem 0; max-width: 65ch; }
+
+@media (max-width: 760px) {
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters .search { grid-column: 1 / -1; }
+  .facts { grid-template-columns: minmax(0, 1fr); }
+  form.quiz { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 420px) { .filters { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1 id="t-titulo">Ayudas Baleares</h1>
+      <span class="isles">Mallorca · Menorca · Eivissa · Formentera</span>
+    </div>
+    <p class="lema" id="t-lema"></p>
+    <div class="aviso" role="note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 7v6M12 16.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <div><strong id="t-aviso"></strong> <span id="t-aviso2"></span></div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Secciones">
+    <button class="tab" role="tab" id="tab-buscar" aria-controls="panel-buscar" aria-selected="true"></button>
+    <button class="tab" role="tab" id="tab-cuestionario" aria-controls="panel-cuestionario" aria-selected="false"></button>
+  </nav>
+
+  <main>
+    <section class="panel" id="panel-buscar" role="tabpanel" aria-labelledby="tab-buscar">
+      <div class="filters">
+        <div class="search">
+          <label class="lbl" for="q" id="l-q"></label>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" id="q" autocomplete="off">
+        </div>
+        <div><label class="lbl" for="f-isla" id="l-isla"></label><select id="f-isla"></select></div>
+        <div><label class="lbl" for="f-muni" id="l-muni"></label><select id="f-muni"></select></div>
+        <div><label class="lbl" for="f-cat" id="l-cat"></label><select id="f-cat"></select></div>
+        <div><label class="lbl" for="f-est" id="l-est"></label><select id="f-est"></select></div>
+      </div>
+      <div class="bar">
+        <span class="count" id="count" aria-live="polite"></span>
+        <button class="linkbtn" id="reset" type="button"></button>
+      </div>
+      <ul class="list" id="list"></ul>
+    </section>
+
+    <section class="panel" id="panel-cuestionario" role="tabpanel" aria-labelledby="tab-cuestionario" hidden>
+      <p class="qintro" id="t-qintro"></p>
+      <form class="quiz" id="quiz" novalidate></form>
+      <div id="qres" tabindex="-1"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="t-pie"></p>
+    <p id="t-act"></p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  let T = {}, D = {}, FICHAS = [];
+  const ORDEN = { "abierta": 0, "proxima": 1, "permanente": 2, "por-confirmar": 3, "cerrada": 4 };
+  const EDAD = { "<30": [18, 29], "30-35": [30, 35], "36-40": [36, 40], "41-64": [41, 64], "65+": [65, 120] };
+  const RESID = { "<1": 0, "1-3": 1, "3-5": 3, "5+": 5 };
+
+  const fmt = (s, o = {}) => s.replace(/\{(\w+)\}/g, (_, k) => o[k] ?? "");
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const fecha = iso => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return `${d}/${m}/${y}`; };
+  const hoyISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
+
+  // El estado se recalcula con las fechas publicadas, así no queda "abierta" una convocatoria vencida.
+  function estadoReal(f) {
+    if (f.plazo && f.plazo.inicio && f.plazo.fin) {
+      const h = hoyISO();
+      if (h < f.plazo.inicio) return "proxima";
+      if (h > f.plazo.fin) return "cerrada";
+      return "abierta";
+    }
+    return f.estado;
+  }
+
+  async function cargar() {
+    const lang = "es"; // Para añadir catalán: crea textos.ca.json y cambia o detecta este valor.
+    const [t, d] = await Promise.all([
+      fetch(`textos.${lang}.json`).then(r => { if (!r.ok) throw 0; return r.json(); }),
+      fetch("ayudas.json").then(r => { if (!r.ok) throw 0; return r.json(); })
+    ]);
+    T = t; D = d; FICHAS = d.fichas.map(f => ({ ...f, est: estadoReal(f) }));
+    document.documentElement.lang = t.idioma;
+  }
+
+  function textos() {
+    $("#t-lema").textContent = T.lema;
+    $("#t-aviso").textContent = T.aviso;
+    $("#t-aviso2").textContent = T.avisoDerecho;
+    $("#tab-buscar").textContent = T.pestanaBuscar;
+    $("#tab-cuestionario").textContent = T.pestanaCuestionario;
+    $("#l-q").textContent = T.buscarEtiqueta;
+    $("#q").placeholder = T.buscarPlaceholder;
+    $("#l-isla").textContent = T.filtroIsla;
+    $("#l-muni").textContent = T.filtroMunicipio;
+    $("#l-cat").textContent = T.filtroCategoria;
+    $("#l-est").textContent = T.filtroEstado;
+    $("#reset").textContent = T.limpiar;
+    $("#t-qintro").textContent = T.cuestionarioIntro;
+    $("#t-pie").textContent = T.pie;
+    $("#t-act").innerHTML = `${esc(T.aviso)} <span class="mono">· ${esc(fmt(T.comprobado, { fecha: fecha(D.actualizado) }))}</span>`;
+  }
+
+  // ---------- Filtros ----------
+  function opciones(sel, items, todas) {
+    sel.innerHTML = `<option value="">${esc(todas)}</option>` + items.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join("");
+  }
+  function rellenarMunicipios() {
+    const isla = $("#f-isla").value, sel = $("#f-muni"), prev = sel.value;
+    const islas = isla ? [isla] : D.islas;
+    sel.innerHTML = `<option value="">${esc(T.todos)}</option>` + islas.map(i =>
+      `<optgroup label="${esc(i)}">${D.municipios[i].map(m => `<option value="${esc(i + "|" + m)}">${esc(m)}</option>`).join("")}</optgroup>`).join("");
+    if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+  }
+  function montarFiltros() {
+    opciones($("#f-isla"), D.islas.map(i => [i, i]), T.todas);
+    opciones($("#f-cat"), Object.entries(D.categorias), T.todos);
+    opciones($("#f-est"), Object.keys(ORDEN).map(k => [k, T.estados[k]]), T.todos);
+    rellenarMunicipios();
+    $("#f-isla").addEventListener("change", () => { rellenarMunicipios(); buscar(); });
+    ["#f-muni", "#f-cat", "#f-est"].forEach(s => $(s).addEventListener("change", buscar));
+    $("#q").addEventListener("input", buscar);
+    $("#reset").addEventListener("click", () => {
+      $("#q").value = ""; ["#f-isla", "#f-cat", "#f-est"].forEach(s => $(s).value = ""); rellenarMunicipios(); $("#f-muni").value = ""; buscar(); $("#q").focus();
+    });
+  }
+  function aplica(f, isla, muni) {
+    if (isla && !f.islas.includes(isla)) return false;
+    if (muni) {
+      const [mi, mm] = muni.split("|");
+      if (!f.islas.includes(mi)) return false;
+      if (f.municipios && f.municipios.length && !f.municipios.includes(mm)) return false;
+    }
+    return true;
+  }
+  function texto(f) {
+    return norm([f.nombre, f.organismo, f.resumen, D.categorias[f.categoria], (f.interesaA || []).join(" "), (f.requisitos || []).join(" "), f.notas, T.tipos[f.tipo]].join(" "));
+  }
+  function buscar() {
+    const q = norm($("#q").value).trim().split(/\s+/).filter(Boolean);
+    const isla = $("#f-isla").value, muni = $("#f-muni").value, cat = $("#f-cat").value, est = $("#f-est").value;
+    const res = FICHAS.filter(f => aplica(f, isla, muni) && (!cat || f.categoria === cat) && (!est || f.est === est) && q.every(w => texto(f).includes(w)))
+      .sort((a, b) => ORDEN[a.est] - ORDEN[b.est]);
+    $("#count").textContent = res.length === 1 ? T.resultadosUno : fmt(T.resultadosVarios, { n: res.length });
+    $("#list").innerHTML = res.length ? res.map(f => tarjeta(f)).join("") : `<li class="empty">${esc(T.sinResultados)}</li>`;
+  }
+
+  // ---------- Ficha ----------
+  function tarjeta(f, razones) {
+    const islas = f.islas.length === D.islas.length ? T.todasIslas : f.islas.join(", ");
+    const donde = f.municipios && f.municipios.length ? `${islas}: ${f.municipios.join(", ")}` : islas;
+    const plazo = f.plazo ? `<span class="mono">${esc(fmt(T.desde, { inicio: fecha(f.plazo.inicio), fin: fecha(f.plazo.fin) }))}</span>`
+      : (f.est === "permanente" ? esc(T.estados.permanente) : `<span class="pend">${esc(T.consultaOficial)}</span>`);
+    const importe = f.importe ? esc(f.importe) : (f.tipo === "ayuda" ? `<span class="pend">${esc(T.consultaOficial)}</span>` : "—");
+    const lista = a => `<ul>${a.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+    const why = razones && razones.length ? `<div class="why"><h4>${esc(T.porQue)}</h4>${lista(razones)}</div>` : "";
+    const req = f.requisitos && f.requisitos.length ? `<div><h4>${esc(T.campoRequisitos)}</h4>${lista(f.requisitos)}</div>` : `<div><h4>${esc(T.campoRequisitos)}</h4><p class="pend">${esc(T.consultaOficial)}</p></div>`;
+    const extra = f.enlacesExtra && f.enlacesExtra.length ? `<div><h4>${esc(T.campoMasEnlaces)}</h4><ul>${f.enlacesExtra.map(e => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.texto)}</a></li>`).join("")}</ul></div>` : "";
+    const pend = f.pendientes && f.pendientes.length ? `<div class="box-pend"><h4>${esc(T.campoPendientes)}</h4>${lista(f.pendientes)}</div>` : "";
+    return `<li class="card is-${f.est}" id="ficha-${esc(f.id)}">
+      <div class="meta">
+        <span class="pill st-${f.est}">${esc(T.estados[f.est])}</span>
+        <span class="tag">${esc(T.tipos[f.tipo])}</span><span class="tag">${esc(D.categorias[f.categoria])}</span>
+        ${f.verificacion === "parcial" ? `<span class="tag pend">${esc(T.verificacionParcial)}</span>` : ""}
+      </div>
+      <h3>${esc(f.nombre)}</h3>
+      <p class="org">${esc(f.organismo)}</p>
+      <p class="sum">${esc(f.resumen)}</p>
+      ${why}
+      <dl class="facts">
+        <div><dt>${esc(T.campoPlazo)}</dt><dd>${plazo}</dd></div>
+        <div><dt>${esc(T.campoImporte)}</dt><dd>${importe}</dd></div>
+        <div><dt>${esc(T.campoDonde)}</dt><dd>${esc(donde)}</dd></div>
+      </dl>
+      <details>
+        <summary>${esc(T.verDetalles)}</summary>
+        <div class="det">
+          <div><h4>${esc(T.campoInteresa)}</h4>${lista(f.interesaA || [])}</div>
+          ${req}
+          ${f.notas ? `<div><h4>${esc(T.campoNotas)}</h4><p>${esc(f.notas)}</p></div>` : ""}
+          ${pend}${extra}
+        </div>
+      </details>
+      <div class="foot">
+        <a class="btn" href="${esc(f.enlace)}" target="_blank" rel="noopener">${esc(f.enlaceTexto || T.verOficial)}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">(se abre en otra pestaña)</span></a>
+        <span class="checked mono">${esc(fmt(T.comprobado, { fecha: fecha(f.comprobado) }))}${f.codigoSIA ? " · " + esc(fmt(T.codigoSIA, { codigo: f.codigoSIA })) : ""}</span>
+      </div>
+    </li>`;
+  }
+
+  // ---------- Cuestionario ----------
+  const PREG = ["edad", "isla", "residencia", "vivienda", "empleo", "nacionalidad", "vehiculo", "ingresos", "familia", "discapacidad"];
+  function montarCuestionario() {
+    const html = PREG.map(k => {
+      const p = T.preguntas[k];
+      const ops = k === "isla" ? D.islas.map(i => [i, i]) : Object.entries(p.opciones);
+      return `<fieldset><legend>${esc(p.texto)}</legend><div class="opts">
+        ${ops.map(([v, l], i) => `<label><input type="radio" name="${k}" id="q-${k}-${i}" value="${esc(v)}">${esc(l)}</label>`).join("")}
+        <label><input type="radio" name="${k}" id="q-${k}-nr" value="" checked>${esc(T.sinRespuesta)}</label>
+      </div></fieldset>`;
+    }).join("");
+    $("#quiz").innerHTML = html + `<div class="qactions"><button class="btn" type="submit">${esc(T.cuestionarioBoton)}</button><button class="btn ghost" type="reset">${esc(T.cuestionarioReiniciar)}</button></div>`;
+    $("#quiz").addEventListener("submit", e => { e.preventDefault(); evaluar(); });
+    $("#quiz").addEventListener("reset", () => setTimeout(() => { $("#qres").innerHTML = ""; }, 0));
+  }
+  function evaluar() {
+    const fd = new FormData($("#quiz")), a = {};
+    PREG.forEach(k => { const v = fd.get(k); if (v) a[k] = v; });
+    const out = $("#qres");
+    if (!Object.keys(a).length) { out.innerHTML = `<p class="empty">${esc(T.cuestionarioSinRespuestas)}</p>`; out.focus(); return; }
+    const lab = (k, v) => T.preguntas[k].opciones[v];
+    const R = T.razones, res = [];
+    for (const f of FICHAS) {
+      const c = f.criterios || {}, why = []; let fuera = false;
+      if (a.isla && !f.islas.includes(a.isla)) continue;
+      if (c.edadMax != null && a.edad) { const [mn, mx] = EDAD[a.edad]; if (mn > c.edadMax) fuera = true; else if (mx <= c.edadMax) why.push(fmt(R.edad, { max: c.edadMax })); }
+      if (c.vivienda && a.vivienda) { if (c.vivienda.includes(a.vivienda)) why.push(fmt(R.vivienda, { valor: lab("vivienda", a.vivienda).toLowerCase() })); else fuera = true; }
+      if (c.empleo && a.empleo) { if (c.empleo.includes(a.empleo)) why.push(fmt(R.empleo, { valor: lab("empleo", a.empleo).toLowerCase() })); else fuera = true; }
+      if (c.nacionalidad && a.nacionalidad) { if (c.nacionalidad.includes(a.nacionalidad)) why.push(R.nacionalidad); else fuera = true; }
+      if (c.vehiculo && a.vehiculo) { if (a.vehiculo === "si") why.push(R.vehiculo); else fuera = true; }
+      if (c.ingresosBajos && a.ingresos) { if (a.ingresos === "si") why.push(R.ingresos); else fuera = true; }
+      if (c.general) why.push(R.general);
+      const fuertes = why.length; // la residencia y la isla solo matizan: no bastan por sí solas
+      if (c.residenciaMin != null && a.residencia) { if (RESID[a.residencia] >= c.residenciaMin) why.push(fmt(R.residencia, { min: c.residenciaMin })); else fuera = true; }
+      if (fuera || !fuertes) continue;
+      if (a.isla && f.islas.length === 1) why.push(fmt(R.isla, { isla: a.isla }));
+      (c.avisos || []).forEach(v => { if (v === "discapacidad" && a.discapacidad === "si") why.push(R.discapacidad); if (v === "familia" && a.familia === "hijos") why.push(R.familia); });
+      if (f.est === "cerrada") why.push(R.cerrada);
+      res.push({ f, why, peso: why.length - (c.general ? 1 : 0) });
+    }
+    res.sort((x, y) => ORDEN[x.f.est] - ORDEN[y.f.est] || y.peso - x.peso);
+    out.innerHTML = `<h2>${esc(T.cuestionarioResultados)}</h2><p class="count">${res.length === 1 ? T.resultadosUno : fmt(T.resultadosVarios, { n: res.length })}</p>` +
+      (res.length ? `<ul class="list">${res.map(r => tarjeta(r.f, r.why)).join("")}</ul>` : `<p class="empty">${esc(T.cuestionarioSinResultados)}</p>`);
+    out.focus();
+  }
+
+  // ---------- Pestañas (con #buscar y #cuestionario en la dirección) ----------
+  function mostrar(cual) {
+    const q = cual === "cuestionario";
+    $("#tab-buscar").setAttribute("aria-selected", String(!q));
+    $("#tab-cuestionario").setAttribute("aria-selected", String(q));
+    $("#panel-buscar").hidden = q; $("#panel-cuestionario").hidden = !q;
+  }
+  function rutas() {
+    const go = () => mostrar(location.hash === "#cuestionario" ? "cuestionario" : "buscar");
+    $("#tab-buscar").addEventListener("click", () => { location.hash = "buscar"; });
+    $("#tab-cuestionario").addEventListener("click", () => { location.hash = "cuestionario"; });
+    window.addEventListener("hashchange", go); go();
+  }
+
+  cargar().then(() => { textos(); montarFiltros(); montarCuestionario(); rutas(); buscar(); })
+    .catch(() => { $("#list").innerHTML = `<li class="empty">No se han podido cargar los datos. Si has abierto index.html directamente, ábrelo con un servidor local (lee el README).</li>`; });
+})();
+</script>
+</body>
+</html>

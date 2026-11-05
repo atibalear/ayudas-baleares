@@ -1,0 +1,590 @@
+{
+  "version": "1.0",
+  "actualizado": "2026-11-05",
+  "nota": "Datos de Ayudas Baleares. Cada ficha enlaza a su fuente oficial. Edita este archivo para actualizar plazos y estados. Ver README.md.",
+  "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+  "municipios": {
+    "Mallorca": ["Alaró", "Alcúdia", "Algaida", "Andratx", "Ariany", "Artà", "Banyalbufar", "Binissalem", "Búger", "Bunyola", "Calvià", "Campanet", "Campos", "Capdepera", "Consell", "Costitx", "Deià", "Escorca", "Esporles", "Estellencs", "Felanitx", "Fornalutx", "Inca", "Lloret de Vistalegre", "Lloseta", "Llubí", "Llucmajor", "Manacor", "Mancor de la Vall", "Maria de la Salut", "Marratxí", "Montuïri", "Muro", "Palma", "Petra", "Pollença", "Porreres", "Puigpunyent", "Sa Pobla", "Sant Joan", "Sant Llorenç des Cardassar", "Santa Eugènia", "Santa Margalida", "Santa Maria del Camí", "Santanyí", "Selva", "Sencelles", "Ses Salines", "Sineu", "Sóller", "Son Servera", "Valldemossa", "Vilafranca de Bonany"],
+    "Menorca": ["Alaior", "Ciutadella de Menorca", "Es Castell", "Es Mercadal", "Es Migjorn Gran", "Ferreries", "Maó", "Sant Lluís"],
+    "Eivissa": ["Eivissa", "Sant Antoni de Portmany", "Sant Joan de Labritja", "Sant Josep de sa Talaia", "Santa Eulària des Riu"],
+    "Formentera": ["Formentera"]
+  },
+  "categorias": {
+    "alquiler": "Alquiler",
+    "vivienda": "Vivienda y compra",
+    "documentacion": "Documentación",
+    "vehiculo": "Coche y conducir",
+    "transporte": "Transporte",
+    "salud": "Salud",
+    "empleo": "Empleo",
+    "ingresos": "Ingresos mínimos"
+  },
+  "fichas": [
+    {
+      "id": "bono-alquiler-joven-2026-2027",
+      "tipo": "ayuda",
+      "nombre": "Bono Alquiler Joven 2026-2027",
+      "organismo": "Govern de les Illes Balears · Conselleria de Vivienda, Territorio y Movilidad (Dirección General de Vivienda y Arquitectura)",
+      "categoria": "alquiler",
+      "interesaA": ["Jóvenes de hasta 35 años", "Personas que viven de alquiler (vivienda o habitación)"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Ayuda mensual para jóvenes de hasta 35 años que viven de alquiler en Baleares, en una vivienda o en una habitación. Cubre parte de la renta de 2026 y 2027, hasta 24 mensualidades.",
+      "requisitos": [
+        "Tener hasta 35 años (incluidos) al presentar la solicitud.",
+        "Nacionalidad española o de la UE, EEE o Suiza; si no, estancia o residencia regular en España.",
+        "Ser titular de un contrato de alquiler o de cesión de uso. No se admiten subarriendos.",
+        "Renta máxima: 900 € al mes por vivienda o 450 € al mes por habitación.",
+        "Ingresos iguales o inferiores a 3 veces el IPREM (la sede electrónica indica 25.200 €). En vivienda cuentan todas las personas que viven en ella.",
+        "Tener una fuente regular de ingresos: al menos 3 meses en los 6 anteriores a la solicitud, o una duración prevista de 6 meses.",
+        "Estar al corriente del pago del alquiler.",
+        "Que sea tu residencia habitual, acreditada con certificado de empadronamiento.",
+        "No tener parentesco de primer o segundo grado con la persona que alquila, ni ser socio de ella."
+      ],
+      "importe": "Hasta 250 € al mes por persona beneficiaria, durante un máximo de 24 meses.",
+      "plazo": { "inicio": "2026-09-01", "fin": "2026-09-30" },
+      "estado": "cerrada",
+      "notas": "Si ya lo solicitaste, los recibos del alquiler se presentan en tres periodos: del 4 de enero al 1 de febrero de 2027, del 15 de junio al 15 de julio de 2027 y del 3 de enero al 3 de febrero de 2028.",
+      "codigoSIA": "3271349",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.caib.es/seucaib/es/200/personas%20/tramites/tramite/6513013",
+      "enlacesExtra": [
+        { "texto": "Web del Bono Alquiler Joven", "url": "https://www.caib.es/sites/bolloguerjove/es/bo_lloguer_jove/" }
+      ],
+      "pendientes": ["El importe de 250 € al mes aparece en la web informativa del Bono; la ficha de la sede electrónica no lo repite."],
+      "criterios": { "edadMax": 35, "vivienda": ["alquilo-vivienda", "alquilo-habitacion"] }
+    },
+    {
+      "id": "ayudas-alquiler-govern",
+      "tipo": "ayuda",
+      "nombre": "Ayudas al alquiler de vivienda (convocatoria general)",
+      "organismo": "Govern de les Illes Balears · Conselleria de Vivienda, Territorio y Movilidad",
+      "categoria": "alquiler",
+      "interesaA": ["Personas que viven de alquiler con ingresos limitados"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Ayuda para pagar parte del alquiler de la vivienda habitual, para hogares con ingresos limitados. Se convoca por años. La última convocatoria publicada es la de las ayudas de 2025, que ya no admite solicitudes.",
+      "requisitos": [],
+      "importe": null,
+      "plazo": null,
+      "estado": "por-confirmar",
+      "notas": "Los requisitos y el importe cambian en cada convocatoria. Cuando se publique la nueva, aparecerá en el BOIB.",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://intranet.caib.es/eboibfront/pdf/es/2026/67/1220081",
+      "enlaceTexto": "Resolución del BOIB sobre las ayudas al alquiler de 2025",
+      "enlacesExtra": [
+        { "texto": "Boletín Oficial de las Illes Balears (BOIB)", "url": "https://www.caib.es/eboibfront/" }
+      ],
+      "pendientes": [
+        "No hemos encontrado en fuentes oficiales la convocatoria de 2026. La prensa (2 de noviembre de 2026) dice que se abriría en el primer trimestre de 2027, sin confirmación oficial.",
+        "Requisitos e importe: consulta la convocatoria oficial cuando se publique."
+      ],
+      "criterios": { "vivienda": ["alquilo-vivienda"], "ingresosBajos": true }
+    },
+    {
+      "id": "ayuda-compra-vivienda-10000",
+      "tipo": "ayuda",
+      "nombre": "Ayuda de 10.000 € para comprar vivienda (hasta 40 años)",
+      "organismo": "Govern de les Illes Balears · Dirección General de Vivienda y Arquitectura",
+      "categoria": "vivienda",
+      "interesaA": ["Personas de hasta 40 años que compran su vivienda habitual"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Subvención directa de 10.000 € por vivienda para personas de hasta 40 años que compran en Baleares su vivienda habitual, ya construida o en construcción, desde el 1 de enero de 2026.",
+      "requisitos": [
+        "Tener hasta 40 años (incluidos) al presentar la solicitud.",
+        "Haber residido en Baleares al menos 5 años seguidos antes de firmar la compra.",
+        "Vivir en la vivienda como residencia habitual al menos 5 años (con excepciones justificadas).",
+        "Ingresos iguales o inferiores a 6,5 veces el IPREM, con incrementos según situación familiar o discapacidad.",
+        "Compra realizada o en proceso a partir del 1 de enero de 2026.",
+        "Nacionalidad española, de la UE, EEE o Suiza, o residencia legal en España.",
+        "No tener otra vivienda en España, salvo las excepciones de la convocatoria.",
+        "Precio máximo de la vivienda: 382.000 €, sin impuestos ni gastos."
+      ],
+      "importe": "10.000 € por vivienda. Si hay dos titulares, se reparte según el porcentaje de propiedad de cada uno.",
+      "plazo": { "inicio": "2026-07-17", "fin": "2027-12-31" },
+      "estado": "abierta",
+      "notas": "Es compatible con otras ayudas públicas o privadas, siempre que el total no supere el coste de la vivienda.",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.caib.es/sites/dgha/es/ajudes_adquisicio_habitatge/",
+      "enlacesExtra": [
+        { "texto": "Trámite en la sede electrónica", "url": "https://www.caib.es/seucaib/ca/200/persones%20/tramites/tramite/6523479/" },
+        { "texto": "Cita previa del Govern", "url": "https://www.caib.es/sites/cita_previa/es/inici/" }
+      ],
+      "pendientes": ["La prensa indica que se resuelve por orden de entrada y que el plazo puede cerrar antes si se agota el presupuesto (6 millones de euros). Compruébalo en la convocatoria."],
+      "criterios": { "edadMax": 40, "vivienda": ["quiero-comprar"], "residenciaMin": 5 }
+    },
+    {
+      "id": "nova-hipoteca-jove",
+      "tipo": "ayuda",
+      "nombre": "Nova Hipoteca Jove (aval del IBAVI para la hipoteca)",
+      "organismo": "Instituto Balear de la Vivienda (IBAVI)",
+      "categoria": "vivienda",
+      "interesaA": ["Personas que compran vivienda y no tienen ahorrada la entrada", "Menores de 40 años, familias numerosas o monoparentales, personas con discapacidad"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "El IBAVI avala ante el banco una parte del precio de la vivienda para que la hipoteca pueda cubrir la compra completa. No es dinero que recibes: es una garantía pública. Se pide a través de un banco adherido al programa.",
+      "requisitos": [
+        "Nacionalidad española o de la UE, o residencia legal en España.",
+        "Residencia continua o discontinua en Baleares de al menos 5 años.",
+        "Ingresos anuales de hasta 6,5 veces el IPREM: 60.666,65 € para una persona y 68.250 € para dos o más.",
+        "No ser propietario ni usufructuario de otra vivienda en España (con excepciones).",
+        "Vivienda en Baleares, como residencia habitual mientras dure la garantía.",
+        "Precio máximo de 382.744,84 €, sin gastos ni impuestos.",
+        "El banco adherido debe financiar al menos el 80% del valor."
+      ],
+      "importe": "Aval de hasta el 20% del valor de la vivienda para menores de 40 años, familias numerosas o monoparentales y personas con discapacidad; hasta el 15% en los demás casos. Gastos de tramitación: 0,50% del importe avalado.",
+      "plazo": { "inicio": "2025-03-28", "fin": "2028-02-01" },
+      "estado": "abierta",
+      "notas": "El plazo termina el 1 de febrero de 2028 o antes, si se agota el presupuesto. El aval depende de que el banco conceda el préstamo.",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.caib.es/sites/nova_hipoteca_jove/es/requisitos/",
+      "enlacesExtra": [
+        { "texto": "Plazo de presentación", "url": "https://www.caib.es/sites/nova_hipoteca_jove/es/plazo_de_presentacian/" },
+        { "texto": "Pasos a seguir", "url": "https://www.caib.es/sites/nova_hipoteca_jove/es/pasos_a_seguir/" }
+      ],
+      "pendientes": [],
+      "criterios": { "vivienda": ["quiero-comprar"], "residenciaMin": 5, "avisos": ["discapacidad", "familia"] }
+    },
+    {
+      "id": "registro-demandantes-vivienda-protegida",
+      "tipo": "tramite",
+      "nombre": "Inscripción en el Registro de demandantes de vivienda protegida",
+      "organismo": "Govern de les Illes Balears · IBAVI",
+      "categoria": "vivienda",
+      "interesaA": ["Personas que buscan vivienda pública en alquiler o compra"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Para optar a una vivienda protegida de nueva construcción, del IBAVI o de promotores privados, en venta o alquiler, primero hay que inscribirse en este registro. Después se participa en cada proceso de adjudicación.",
+      "requisitos": [
+        "Tener residencia en las Illes Balears.",
+        "No tener vivienda en propiedad, con las excepciones de los criterios de adjudicación del IBAVI.",
+        "La inscripción dura 2 años y hay que renovarla antes de que caduque.",
+        "Puedes indicar hasta 3 municipios donde estarías dispuesto a vivir.",
+        "La antigüedad en la lista no da prioridad."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://www.caib.es/seucaib/es/200/personas/tramites/tramite/658369",
+      "enlacesExtra": [
+        { "texto": "Preguntas frecuentes sobre vivienda", "url": "https://www.caib.es/sites/informaciohabitatge/es/preguntes_frecuents_v2/" },
+        { "texto": "Vivienda pública del Govern", "url": "https://caib.es/webgoib/vivienda-publica" }
+      ],
+      "pendientes": ["Límites de ingresos y documentación exacta: consulta la página oficial."],
+      "criterios": { "vivienda": ["alquilo-vivienda", "alquilo-habitacion", "quiero-comprar", "otra"], "ingresosBajos": true }
+    },
+    {
+      "id": "itp-primera-vivienda",
+      "tipo": "ayuda",
+      "nombre": "Rebaja del impuesto de compra (ITP) en la primera vivienda",
+      "organismo": "Govern de les Illes Balears · Agència Tributària de les Illes Balears (ATIB)",
+      "categoria": "vivienda",
+      "interesaA": ["Menores de 30 años y personas con discapacidad que compran su primera vivienda", "Otros perfiles con tipos reducidos"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Al comprar una vivienda de segunda mano se paga el Impuesto de Transmisiones Patrimoniales (ITP). Baleares tiene una bonificación para la primera vivienda habitual de menores de 30 años y de personas con discapacidad, y tipos reducidos para otros casos. Se aplica al presentar el impuesto.",
+      "requisitos": [],
+      "importe": null,
+      "plazo": null,
+      "estado": "por-confirmar",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://www.caib.es/sites/consellfiscal/es/d/cons_08-25/",
+      "enlaceTexto": "Consulta oficial del Consell Fiscal sobre esta bonificación",
+      "enlacesExtra": [],
+      "pendientes": [
+        "Precio máximo de la vivienda, límites de renta, años de residencia y préstamo mínimo: fuentes no oficiales dan cifras distintas y algunas cambiaron en 2026. Confírmalo con la ATIB.",
+        "Tipos reducidos para menores de 36 años, familias numerosas y monoparentales: por confirmar en la ATIB."
+      ],
+      "criterios": { "vivienda": ["quiero-comprar"], "avisos": ["discapacidad"] }
+    },
+    {
+      "id": "nie-tie-certificado-ue",
+      "tipo": "tramite",
+      "nombre": "NIE, TIE y certificado de registro de la UE: cita previa",
+      "organismo": "Oficina de Extranjería (Delegación del Gobierno) y Policía Nacional",
+      "categoria": "documentacion",
+      "interesaA": ["Personas extranjeras que viven o van a vivir en Baleares"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Para pedir el NIE, tomar las huellas de la TIE o pedir el certificado de registro de ciudadano de la UE necesitas cita previa en el sistema oficial de extranjería. En la web, elige la provincia «Illes Balears» y después el trámite.",
+      "requisitos": [
+        "Pide la cita solo en la web oficial: es gratuita.",
+        "Elige la provincia «Illes Balears» y el trámite concreto que necesitas.",
+        "Lleva la documentación que indique tu trámite."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus",
+      "enlacesExtra": [
+        { "texto": "Consultar el estado de un expediente de extranjería", "url": "https://sede.administracionespublicas.gob.es/infoext2/" }
+      ],
+      "pendientes": ["Documentación y tasa de cada trámite: consulta la información oficial del trámite elegido."],
+      "criterios": { "nacionalidad": ["ue", "otra"] }
+    },
+    {
+      "id": "dni-pasaporte",
+      "tipo": "tramite",
+      "nombre": "Renovar o pedir el DNI o el pasaporte",
+      "organismo": "Policía Nacional",
+      "categoria": "documentacion",
+      "interesaA": ["Personas con nacionalidad española"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Para renovar o pedir el DNI o el pasaporte necesitas cita previa y acudir en persona a una oficina de la Policía Nacional. La cita se pide en la web oficial o en el teléfono 060.",
+      "requisitos": [
+        "Pide la cita en la web oficial. Hay webs intermediarias que cobran por lo mismo.",
+        "Acude en persona a la oficina en la fecha de la cita."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://www.citapreviadnie.es/",
+      "enlacesExtra": [
+        { "texto": "Portal del DNI electrónico", "url": "https://www.dnielectronico.es/portaldnie/" }
+      ],
+      "pendientes": ["Tasa y documentación (foto, certificado de empadronamiento si cambiaste de domicilio): consulta el portal oficial del DNI."],
+      "criterios": { "nacionalidad": ["es"], "general": true }
+    },
+    {
+      "id": "renovar-permiso-conducir",
+      "tipo": "tramite",
+      "nombre": "Renovar el permiso de conducir",
+      "organismo": "Dirección General de Tráfico (DGT)",
+      "categoria": "vehiculo",
+      "interesaA": ["Personas con permiso de conducir próximo a caducar"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Lo más sencillo es ir a un Centro de Reconocimiento de Conductores autorizado: hacen el informe médico y tramitan la renovación con la DGT. También puedes renovarlo en la DGT, presencialmente o por internet, aportando ese informe. Adelantar la renovación no te hace perder días de validez.",
+      "requisitos": [
+        "Informe de aptitud psicofísica de un Centro de Reconocimiento de Conductores autorizado.",
+        "Impreso oficial de solicitud (si lo haces en la DGT).",
+        "Pago de la tasa."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-y-gestion-de-permisos/",
+      "enlacesExtra": [],
+      "pendientes": [
+        "Importe de la tasa y exención para mayores de 70 años: la prensa los cita, pero no los hemos comprobado en la DGT.",
+        "Antelación máxima para renovar (la prensa indica 3 meses): por confirmar."
+      ],
+      "criterios": { "vehiculo": true }
+    },
+    {
+      "id": "itv-mallorca",
+      "tipo": "tramite",
+      "nombre": "ITV en Mallorca: cita previa",
+      "organismo": "Consell de Mallorca · Servicio de ITV",
+      "categoria": "vehiculo",
+      "interesaA": ["Personas con coche, moto u otro vehículo en Mallorca"],
+      "islas": ["Mallorca"],
+      "municipios": [],
+      "resumen": "Para la inspección periódica es imprescindible pedir cita previa, en la web itv.mallorca.es o por teléfono. Desde esa web también puedes cambiar la cita a otra estación. Hay estaciones en Palma, Can Pastilla, Inca, Manacor y Calvià.",
+      "requisitos": [
+        "Cita previa obligatoria para la inspección periódica.",
+        "Teléfono de cita: 871 57 55 44.",
+        "Las inspecciones no periódicas (por ejemplo, reformas) se gestionan directamente con el Servicio de ITV del Consell y no usan la cita previa."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.conselldemallorca.es/es/itv",
+      "enlacesExtra": [
+        { "texto": "Web de cita previa itv.mallorca.es", "url": "https://itv.mallorca.es/" }
+      ],
+      "pendientes": ["Tarifas: consulta la web del Consell de Mallorca."],
+      "criterios": { "vehiculo": true }
+    },
+    {
+      "id": "itv-menorca",
+      "tipo": "tramite",
+      "nombre": "ITV en Menorca: cita previa",
+      "organismo": "Consell Insular de Menorca (servicio prestado por la concesionaria TÜV Rheinland Certio)",
+      "categoria": "vehiculo",
+      "interesaA": ["Personas con vehículo en Menorca"],
+      "islas": ["Menorca"],
+      "municipios": [],
+      "resumen": "La ITV de Menorca tiene estaciones en Maó y Ciutadella. La gestiona una empresa concesionaria del Consell Insular. Para pedir cita solo necesitas la matrícula.",
+      "requisitos": [
+        "Estación de Maó: c. de Bajolí, 40 (POIMA). Teléfono 971 354 502.",
+        "Para pedir cita solo hace falta la matrícula del vehículo. La cita es gratuita."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://www.cime.es/OrgansGovern/Servei.aspx?ID=10020",
+      "enlacesExtra": [],
+      "pendientes": [
+        "La prensa (septiembre de 2026) informa de que vuelve a funcionar la cita por web, teléfono y presencial tras meses de restricciones. Comprueba en el Consell cómo pedir cita ahora.",
+        "Teléfono de Ciutadella y tarifas: por confirmar."
+      ],
+      "criterios": { "vehiculo": true }
+    },
+    {
+      "id": "itv-eivissa",
+      "tipo": "tramite",
+      "nombre": "ITV en Eivissa: cita previa",
+      "organismo": "Consell d'Eivissa · Servicio de ITV",
+      "categoria": "vehiculo",
+      "interesaA": ["Personas con vehículo en Eivissa"],
+      "islas": ["Eivissa"],
+      "municipios": [],
+      "resumen": "Para la inspección periódica hay que pedir cita previa en la web de la ITV del Consell o por teléfono. Hay una estación fija en Santa Gertrudis y una ITV móvil en el recinto ferial de Eivissa.",
+      "requisitos": [
+        "Cita previa por web (itv.conselldeivissa.es) o en el teléfono 971 19 59 06.",
+        "Estación de Santa Gertrudis: Ctra. Sant Miquel, km 2,7.",
+        "Segunda inspección tras un resultado desfavorable: acude a la misma estación, sin cita.",
+        "Homologaciones, duplicados de ficha técnica o inspección previa a matricular: pide cita por correo a itv_eivissa@conselldeivissa.es."
+      ],
+      "importe": "Turismos y vehículos ligeros: 32,18 €. Motos y ciclomotores: 16,18 €. Incluye la tasa de tráfico de 4,18 €.",
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.conselldeivissa.es/es/departamento-territorio-mobilidad-infraestructuras-intrusismo-oturistica/servicio-itv",
+      "enlacesExtra": [
+        { "texto": "Web de cita previa de la ITV", "url": "https://itv.conselldeivissa.es/" },
+        { "texto": "Tarifas de la ITV", "url": "https://itv.conselldeivissa.es/tarifas/" }
+      ],
+      "pendientes": [],
+      "criterios": { "vehiculo": true }
+    },
+    {
+      "id": "itv-formentera",
+      "tipo": "tramite",
+      "nombre": "ITV en Formentera: cita previa",
+      "organismo": "Consell Insular de Formentera · Conselleria de Movilidad",
+      "categoria": "vehiculo",
+      "interesaA": ["Personas con vehículo en Formentera"],
+      "islas": ["Formentera"],
+      "municipios": [],
+      "resumen": "Desde abril de 2026 la cita previa para la ITV de Formentera se pide en una web del Consell, que muestra la primera cita libre y otras opciones de día y hora.",
+      "requisitos": ["Pide la cita en la web de ITV del Consell de Formentera."],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://itv.conselldeformentera.cat/",
+      "enlacesExtra": [
+        { "texto": "Web del Consell de Formentera", "url": "https://consellformentera.com/?lang=es" }
+      ],
+      "pendientes": ["Dirección del enlace confirmada por prensa local; teléfono y tarifas por confirmar en el Consell."],
+      "criterios": { "vehiculo": true }
+    },
+    {
+      "id": "empadronamiento",
+      "tipo": "tramite",
+      "nombre": "Empadronarte (alta en el padrón municipal)",
+      "organismo": "Tu ayuntamiento",
+      "categoria": "documentacion",
+      "interesaA": ["Cualquier persona que vive en un municipio de Baleares"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "El padrón acredita dónde vives. Se tramita en el ayuntamiento del municipio donde resides. Muchas ayudas y trámites de esta web lo piden: el descuento de residente, la Targeta Única, el Bono Alquiler Joven o la ayuda para comprar vivienda.",
+      "requisitos": [
+        "Cada ayuntamiento indica cómo pedirlo y qué documentos llevar.",
+        "Ejemplo de Palma: las altas y cambios de domicilio se hacen presencialmente en las oficinas de atención ciudadana (OAC) con cita previa. Las personas mayores de 65 años pueden ir sin cita a la OAC de Son Moix."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://seuelectronica.palma.es/portal/PALMA/sede/RecursosWeb/DOCUMENTOS/1/58_2820_2.pdf",
+      "enlaceTexto": "Hoja informativa del Ajuntament de Palma (altas y cambios de domicilio)",
+      "enlacesExtra": [],
+      "pendientes": [
+        "La hoja de Palma tiene fecha de marzo de 2023; comprueba que sigue vigente.",
+        "Resto de municipios: consulta la web de tu ayuntamiento."
+      ],
+      "criterios": { "general": true }
+    },
+    {
+      "id": "descuento-residente",
+      "tipo": "tramite",
+      "nombre": "Descuento de residente en vuelos y barcos",
+      "organismo": "Estado (información del Servicio de Transporte Aéreo del Govern)",
+      "categoria": "transporte",
+      "interesaA": ["Residentes en Baleares que viajan entre islas o a la península"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Las personas residentes en Baleares tienen descuento en los vuelos regulares entre islas y con el resto de España. Normalmente la compañía comprueba tu residencia de forma automática; si no puede, te pueden pedir el certificado de empadronamiento.",
+      "requisitos": [
+        "Estar empadronado en un municipio de Baleares.",
+        "Ser ciudadano español, de la UE, EEE o Suiza; familiar con derecho de residencia; o nacional de otro país con residencia de larga duración.",
+        "Identificarte con DNI, NIE o pasaporte."
+      ],
+      "importe": "75% sobre la tarifa en vuelos regulares.",
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.caib.es/sites/transportaeri/es/descuentos_de_residente-3903/",
+      "enlacesExtra": [],
+      "pendientes": ["La página oficial reconoce el derecho también en barco, pero solo detalla el porcentaje para vuelos. Consulta con la naviera."],
+      "criterios": { "general": true }
+    },
+    {
+      "id": "tarjeta-sanitaria",
+      "tipo": "tramite",
+      "nombre": "Tarjeta sanitaria del IB-Salut",
+      "organismo": "Servei de Salut de les Illes Balears (IB-Salut)",
+      "categoria": "salud",
+      "interesaA": ["Personas con derecho a la sanidad pública que viven en Baleares"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "La tarjeta sanitaria individual sirve para usar la sanidad pública balear. El mismo trámite sirve para pedirla por primera vez, renovarla, pedir un duplicado o cambiar tus datos.",
+      "requisitos": [
+        "Tener reconocido el derecho a la asistencia sanitaria pública.",
+        "Fotografía reciente en color de 26 × 32 mm.",
+        "Certificado de empadronamiento (solo en algunos municipios).",
+        "Formulario oficial de solicitud.",
+        "Se puede presentar por internet (certificado digital, DNI electrónico o Cl@ve permanente) o presencialmente en una oficina de registro."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "codigoSIA": "2896237",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.caib.es/seucaib/es/200/personas/tramites/tramite/5339364",
+      "enlacesExtra": [],
+      "pendientes": [],
+      "criterios": { "general": true }
+    },
+    {
+      "id": "targeta-unica-transporte",
+      "tipo": "tramite",
+      "nombre": "Targeta Única de transporte público de Mallorca",
+      "organismo": "Govern de les Illes Balears (TIB) y Ajuntament de Palma (EMT)",
+      "categoria": "transporte",
+      "interesaA": ["Residentes en Baleares que usan el transporte público de Mallorca"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Una sola tarjeta para el tren, el metro, el bus interurbano TIB y el bus urbano de la EMT de Palma. El Govern ha aprobado que el bus interurbano, el tren y el metro de Mallorca sigan siendo gratuitos en 2026. Desde marzo de 2026 también la pueden pedir los residentes de Menorca, Eivissa y Formentera.",
+      "requisitos": [
+        "Ser residente en Baleares.",
+        "Si ya tienes la Targeta Intermodal, sigue siendo válida y no necesitas la nueva.",
+        "Se pide por internet en la web del TIB o en persona con cita previa (una cita por cada tarjeta).",
+        "Oficinas en Mallorca: TIB de la Estación Intermodal, Alcúdia, Inca y Manacor; EMT Palma; oficinas municipales de Calvià, Llucmajor y Marratxí.",
+        "En Menorca: SAC de Maó y Ciutadella con cita. En Eivissa: atención ciudadana del Consell con cita. En Formentera: oficinas del Consell en Sant Francesc y Sant Ferran."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://www.tib.org/es/billetes-y-tarifas/tarjeta-unica",
+      "enlacesExtra": [
+        { "texto": "Preguntas frecuentes del Govern", "url": "https://www.caib.es/webgoib/es/w/targeta-unica-de-transport-public-de-mallorca" },
+        { "texto": "Trámite en la sede electrónica", "url": "https://www.caib.es/seucaib/ca/200/persones%20/tramites/tramite/6269684" },
+        { "texto": "Gratuidad del transporte en 2026 (TIB)", "url": "https://www.tib.org/es/w/el-transport-p%C3%BAblic-interurb%C3%A0-mant%C3%A9-la-gratu%C3%AFtat-l-any-2026" }
+      ],
+      "pendientes": ["Condiciones exactas para viajar gratis (por ejemplo, saldo mínimo) y si incluye el bus urbano de la EMT: por confirmar en el TIB y la EMT."],
+      "criterios": { "general": true }
+    },
+    {
+      "id": "inscripcion-soib",
+      "tipo": "tramite",
+      "nombre": "Apuntarte al paro: inscripción como demandante de empleo",
+      "organismo": "Servei d'Ocupació de les Illes Balears (SOIB)",
+      "categoria": "empleo",
+      "interesaA": ["Personas sin trabajo o que buscan otro empleo"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "La inscripción en el SOIB es gratuita y te da acceso a ofertas, formación y orientación. Es obligatoria si cobras una prestación por desempleo. La primera vez tienes que ir a una oficina del SOIB.",
+      "requisitos": [
+        "Primera inscripción: en persona, en una oficina del SOIB.",
+        "Obligatoria para quien cobra prestaciones por desempleo.",
+        "No hay plazo: puedes inscribirte en cualquier momento."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "completa",
+      "enlace": "https://caib.es/seucaib/es/200/personas%20/tramites/tramite/6204695",
+      "enlacesExtra": [],
+      "pendientes": [],
+      "criterios": { "empleo": ["paro"] }
+    },
+    {
+      "id": "renta-social-garantizada",
+      "tipo": "ayuda",
+      "nombre": "Renta Social Garantizada (RESOGA)",
+      "organismo": "Govern de les Illes Balears · Conselleria de Familias, Bienestar Social y Atención a la Dependencia",
+      "categoria": "ingresos",
+      "interesaA": ["Hogares en situación de vulnerabilidad económica"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Prestación periódica para hogares sin recursos suficientes que no reciben el Ingreso Mínimo Vital. Antes hay que haber pedido el Ingreso Mínimo Vital.",
+      "requisitos": [
+        "Estar en situación de vulnerabilidad económica.",
+        "Haber pedido antes el Ingreso Mínimo Vital, o declarar que no cumples sus requisitos.",
+        "Haber pedido las demás prestaciones o pensiones a las que tengas derecho.",
+        "Estar empadronado en un municipio de Baleares al solicitarla.",
+        "Residencia legal ininterrumpida en Baleares de al menos 3 años, con excepciones.",
+        "Si no trabajas ni estudias, estar inscrito en el SOIB.",
+        "La unidad de convivencia debe existir desde al menos 6 meses antes (salvo si vives solo)."
+      ],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://www.caib.es/sites/rendasocialgarantida/es/requisitos_para_acceder_a_la_prestacion/",
+      "enlacesExtra": [
+        { "texto": "Trámite en la sede electrónica", "url": "https://www.caib.es/seucaib/es/tramites/tramite/2615446/" }
+      ],
+      "pendientes": [
+        "La web de la RESOGA indica 3 años de residencia, pero la ficha de la sede electrónica menciona 12 meses. Confírmalo antes de solicitar.",
+        "Importe: consulta la página oficial."
+      ],
+      "criterios": { "ingresosBajos": true, "residenciaMin": 3 }
+    },
+    {
+      "id": "ingreso-minimo-vital",
+      "tipo": "ayuda",
+      "nombre": "Ingreso Mínimo Vital",
+      "organismo": "Seguridad Social (Instituto Nacional de la Seguridad Social)",
+      "categoria": "ingresos",
+      "interesaA": ["Hogares con ingresos muy bajos"],
+      "islas": ["Mallorca", "Menorca", "Eivissa", "Formentera"],
+      "municipios": [],
+      "resumen": "Prestación estatal para hogares con ingresos muy bajos. En Baleares es el primer paso: hay que pedirla antes de solicitar la Renta Social Garantizada.",
+      "requisitos": [],
+      "importe": null,
+      "plazo": null,
+      "estado": "permanente",
+      "comprobado": "2026-11-05",
+      "verificacion": "parcial",
+      "enlace": "https://imv.seg-social.es/",
+      "enlacesExtra": [
+        { "texto": "Sede electrónica de la Seguridad Social", "url": "https://sede.seg-social.gob.es/" }
+      ],
+      "pendientes": ["Requisitos, importes y forma de solicitud: no los hemos verificado en la web oficial. Consulta la Seguridad Social."],
+      "criterios": { "ingresosBajos": true }
+    }
+  ]
+}
